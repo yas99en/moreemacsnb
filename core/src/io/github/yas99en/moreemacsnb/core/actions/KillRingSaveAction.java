@@ -27,36 +27,33 @@ public class KillRingSaveAction extends MoreEmacsAction  {
     }
 
     @Override
-    public void actionPerformed(final ActionEvent e, final JTextComponent target) {
+    public void actionPerformed(final ActionEvent e, JTextComponent target) {
         System.out.println("KillRingSaveAction.actionPerformed()");
         final Caret caret = target.getCaret();
         ActionMap actionMap = target.getActionMap();
         if(actionMap == null)  {
             return;
         }
-        final Action copyAction = actionMap.get(DefaultEditorKit.copyAction);
+        Action copyAction = actionMap.get(DefaultEditorKit.copyAction);
         
         if(caret.getDot() != caret.getMark()) {
             copyAction.actionPerformed(e);
             return;
         }
         
-        final BaseDocument doc = (BaseDocument)target.getDocument();
-        doc.runAtomicAsUser (new Runnable () {
-            @Override
-            public void run () {
-                try {
-                    DocumentUtilities.setTypingModification(doc, true);
-                    int mark = Mark.get(target);
-                    int dot = caret.getDot();
-                    caret.setDot(mark);
-                    caret.moveDot(dot);
-                    target.copy();
-                    target.select(dot, dot);
-                } finally {
-                    DocumentUtilities.setTypingModification(doc, false);
-                }
-            }         
+        BaseDocument doc = (BaseDocument)target.getDocument();
+        doc.runAtomicAsUser (() -> {
+            try {
+                DocumentUtilities.setTypingModification(doc, true);
+                int mark = Mark.get(target);
+                int dot = caret.getDot();
+                caret.setDot(mark);
+                caret.moveDot(dot);
+                target.copy();
+                target.select(dot, dot);
+            } finally {
+                DocumentUtilities.setTypingModification(doc, false);
+            }
         });
     }
 }

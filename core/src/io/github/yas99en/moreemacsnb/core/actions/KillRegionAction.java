@@ -26,35 +26,32 @@ public class KillRegionAction extends MoreEmacsAction {
     }
 
     @Override
-    public void actionPerformed(ActionEvent e, final JTextComponent target) {
+    public void actionPerformed(ActionEvent e, JTextComponent target) {
         System.out.println("KillRegionAction.actionPerformed()");
-        final Caret caret = target.getCaret();
+        Caret caret = target.getCaret();
         ActionMap actionMap = target.getActionMap();
         if(actionMap == null)  {
             return;
         }
-        final Action cutAction = actionMap.get(DefaultEditorKit.cutAction);
+        Action cutAction = actionMap.get(DefaultEditorKit.cutAction);
          
         if(caret.getDot() != caret.getMark()) {
             cutAction.actionPerformed(e);
             return;
         }
         
-        final BaseDocument doc = (BaseDocument)target.getDocument();
-        doc.runAtomicAsUser (new Runnable () {
-            @Override
-            public void run () {
-                try {
-                    DocumentUtilities.setTypingModification(doc, true);
-                    int mark = Mark.get(target);
-                    int dot = caret.getDot();
-                    caret.setDot(mark);
-                    caret.moveDot(dot);
-                    target.cut();
-                } finally {
-                    DocumentUtilities.setTypingModification(doc, false);
-                }
-            }         
+        BaseDocument doc = (BaseDocument)target.getDocument();
+        doc.runAtomicAsUser (() -> {
+            try {
+                DocumentUtilities.setTypingModification(doc, true);
+                int mark = Mark.get(target);
+                int dot = caret.getDot();
+                caret.setDot(mark);
+                caret.moveDot(dot);
+                target.cut();
+            } finally {
+                DocumentUtilities.setTypingModification(doc, false);
+            }
         });
     }
 }
