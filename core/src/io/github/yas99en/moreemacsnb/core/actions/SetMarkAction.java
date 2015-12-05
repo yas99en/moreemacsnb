@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package io.github.yas99en.moreemacsnb.core;
+package io.github.yas99en.moreemacsnb.core.actions;
 
 import java.awt.event.ActionEvent;
 import javax.swing.text.Caret;
@@ -14,7 +14,7 @@ import org.netbeans.api.editor.EditorActionRegistration;
  *
  * @author yendoh
  */
-@EditorActionRegistration(name="io-github-yas99en-moreemacsnb-core-SetMarkAction")
+@EditorActionRegistration(name="io-github-yas99en-moreemacsnb-core-actions-SetMarkAction")
 public class SetMarkAction extends MoreEmacsAction {
     static int nextId = 0;
     int id = nextId++;

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package io.github.yas99en.moreemacsnb.core;
+package io.github.yas99en.moreemacsnb.core.actions;
 
 import java.awt.event.ActionEvent;
 import javax.swing.text.JTextComponent;

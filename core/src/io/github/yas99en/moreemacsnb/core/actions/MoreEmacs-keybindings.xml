@@ -169,7 +169,7 @@ made subject to such option by the copyright holder.
     <bind actionName="uncomment" key="O-0$C-C$C-C"/>
     <!--<bind actionName="word-match-next" key="O-SLASH"/>-->
 
-    <bind actionName="io-github-yas99en-moreemacsnb-core-SetMarkAction" key="C-SPACE"/>
-    <bind actionName="io-github-yas99en-moreemacsnb-core-KillRingSaveAction" key="O-W"/>
-    <bind actionName="io-github-yas99en-moreemacsnb-core-KillRegionAction" key="C-W"/>
+    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-SetMarkAction" key="C-SPACE"/>
+    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-KillRingSaveAction" key="O-W"/>
+    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-KillRegionAction" key="C-W"/>
 </bindings>
