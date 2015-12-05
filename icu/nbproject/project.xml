@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>org.netbeans.modules.apisupport.project</type>
+    <configuration>
+        <data xmlns="http://www.netbeans.org/ns/nb-module-project/3">
+            <code-name-base>io.github.yas99en.moreemacsnb.icu</code-name-base>
+            <suite-component/>
+            <module-dependencies/>
+            <public-packages>
+                <package>com.ibm.icu.impl</package>
+                <package>com.ibm.icu.impl.coll</package>
+                <package>com.ibm.icu.impl.data</package>
+                <package>com.ibm.icu.impl.duration</package>
+                <package>com.ibm.icu.impl.duration.impl</package>
+                <package>com.ibm.icu.impl.locale</package>
+                <package>com.ibm.icu.impl.text</package>
+                <package>com.ibm.icu.lang</package>
+                <package>com.ibm.icu.math</package>
+                <package>com.ibm.icu.text</package>
+                <package>com.ibm.icu.util</package>
+            </public-packages>
+            <class-path-extension>
+                <runtime-relative-path>ext/icu4j-56_1.jar</runtime-relative-path>
+                <binary-origin>release/modules/ext/icu4j-56_1.jar</binary-origin>
+            </class-path-extension>
+        </data>
+    </configuration>
+</project>
