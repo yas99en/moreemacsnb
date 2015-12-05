@@ -12,13 +12,10 @@ import org.netbeans.api.editor.EditorActionRegistration;
 
 /**
  *
- * @author yendoh
+ * @author Yasuhiro Endoh
  */
 @EditorActionRegistration(name="io-github-yas99en-moreemacsnb-core-actions-SetMarkAction")
 public class SetMarkAction extends MoreEmacsAction {
-    static int nextId = 0;
-    int id = nextId++;
-
     public SetMarkAction() {
         super("set-mark");
     }

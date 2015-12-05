@@ -17,7 +17,7 @@ import org.netbeans.lib.editor.util.swing.DocumentUtilities;
 
 /**
  *
- * @author yendoh
+ * @author Yasuhiro Endoh
  */
 @EditorActionRegistration(name="io-github-yas99en-moreemacsnb-core-actions-KillRegionAction")
 public class KillRegionAction extends MoreEmacsAction {
@@ -27,7 +27,6 @@ public class KillRegionAction extends MoreEmacsAction {
 
     @Override
     public void actionPerformed(ActionEvent e, JTextComponent target) {
-        System.out.println("KillRegionAction.actionPerformed()");
         Caret caret = target.getCaret();
         ActionMap actionMap = target.getActionMap();
         if(actionMap == null)  {

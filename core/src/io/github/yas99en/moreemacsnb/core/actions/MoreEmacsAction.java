@@ -11,7 +11,7 @@ import javax.swing.text.TextAction;
 
 /**
  *
- * @author yendoh
+ * @author Yasuhiro Endoh
  */
 public abstract class MoreEmacsAction extends TextAction {
 

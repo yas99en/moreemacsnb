@@ -18,7 +18,7 @@ import org.netbeans.lib.editor.util.swing.DocumentUtilities;
 
 /**
  *
- * @author yendoh
+ * @author Yasuhiro Endoh
  */
 @EditorActionRegistration(name="io-github-yas99en-moreemacsnb-core-actions-KillRingSaveAction")
 public class KillRingSaveAction extends MoreEmacsAction  {
@@ -27,9 +27,8 @@ public class KillRingSaveAction extends MoreEmacsAction  {
     }
 
     @Override
-    public void actionPerformed(final ActionEvent e, JTextComponent target) {
-        System.out.println("KillRingSaveAction.actionPerformed()");
-        final Caret caret = target.getCaret();
+    public void actionPerformed(ActionEvent e, JTextComponent target) {
+        Caret caret = target.getCaret();
         ActionMap actionMap = target.getActionMap();
         if(actionMap == null)  {
             return;
