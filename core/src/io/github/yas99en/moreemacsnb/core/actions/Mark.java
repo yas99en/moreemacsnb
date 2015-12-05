@@ -12,13 +12,16 @@ import javax.swing.text.JTextComponent;
  *
  * @author yendoh
  */
-public class Mark {
+class Mark {
+    private Mark() {}
+
     public static void update(JTextComponent target) {
         Caret caret = target.getCaret();
         if(caret.getDot() != caret.getMark()) {
             set(target, caret.getMark());
         }
     }
+
     public static void set(JTextComponent target, int mark) {
         int length = target.getDocument().getLength();
         if(mark < 0) {
