@@ -14,6 +14,7 @@ import javax.swing.text.JTextComponent;
  */
 class Mark {
     private Mark() {}
+    private static final String MARK_KEY = "io.github.yas99en.moreemacsnb.mark";
 
     public static void update(JTextComponent target) {
         Caret caret = target.getCaret();
@@ -30,11 +31,11 @@ class Mark {
         if(mark > length) {
             mark = length;
         }
-        target.putClientProperty("io.github.yas99en.moreemacsnb.mark", mark);
+        target.putClientProperty(MARK_KEY, mark);
     }
 
     public static int get(JTextComponent target) {
-        Object markObj = target.getClientProperty("io.github.yas99en.moreemacsnb.mark");
+        Object markObj = target.getClientProperty(MARK_KEY);
         if(markObj == null) {
             return 0;
         }
