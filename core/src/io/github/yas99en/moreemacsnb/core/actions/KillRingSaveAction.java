@@ -41,18 +41,13 @@ public class KillRingSaveAction extends MoreEmacsAction  {
             return;
         }
         
-        final Object markObj = target.getClientProperty("emacs2-mark");
-        if(markObj == null) {
-            return;
-        }
-        
         final BaseDocument doc = (BaseDocument)target.getDocument();
         doc.runAtomicAsUser (new Runnable () {
             @Override
             public void run () {
                 try {
                     DocumentUtilities.setTypingModification(doc, true);
-                    int mark = (Integer)markObj;
+                    int mark = Mark.get(target);
                     int dot = caret.getDot();
                     caret.setDot(mark);
                     caret.moveDot(dot);

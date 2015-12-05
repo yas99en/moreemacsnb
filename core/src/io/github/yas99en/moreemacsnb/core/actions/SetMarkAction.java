@@ -26,7 +26,7 @@ public class SetMarkAction extends MoreEmacsAction {
     @Override
     public void actionPerformed(ActionEvent e, JTextComponent target) {
         Caret caret = target.getCaret();
-        target.putClientProperty("emacs2-mark", caret.getDot());
+        Mark.set(target, caret.getDot());
     }
     
 }
