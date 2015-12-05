@@ -25,6 +25,7 @@ public abstract class MoreEmacsAction extends TextAction {
         if(target == null) {
             return;
         }
+        Mark.update(target);
         actionPerformed(e, target);
     }
 
