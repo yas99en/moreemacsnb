@@ -118,9 +118,9 @@ made subject to such option by the copyright holder.
     <bind actionName="insert-break" key="ENTER"/>
     <bind actionName="insert-break" key="C-M"/>
     <bind actionName="insert-tab" key="C-Q$TAB"/>
-    <bind actionName="make-getter" key="O-U$G"/>
-    <bind actionName="make-is" key="O-U$I"/>
-    <bind actionName="make-setter" key="O-U$S"/>
+    <!--<bind actionName="make-getter" key="O-U$G"/>-->
+    <!--<bind actionName="make-is" key="O-U$I"/>-->
+    <!--<bind actionName="make-setter" key="O-U$S"/>-->
     <bind actionName="reindent-line" key="TAB"/>
     <bind actionName="reindent-line" key="C-I"/>
     <bind actionName="page-down" key="C-V"/>
@@ -179,4 +179,6 @@ made subject to such option by the copyright holder.
     <bind actionName="io-github-yas99en-moreemacsnb-core-actions-BackwardWordAction" key="C-LEFT"/>
     <bind actionName="io-github-yas99en-moreemacsnb-core-actions-KillWordAction" key="O-D"/>
     <bind actionName="io-github-yas99en-moreemacsnb-core-actions-BackwardKillWordAction" key="O-BACK_SPACE"/>
+    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-CapitalizeWordAction" key="O-U"/>
+    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-DowncaseWordAction" key="O-L"/>
 </bindings>
