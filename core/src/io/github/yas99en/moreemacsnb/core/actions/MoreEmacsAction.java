@@ -8,6 +8,8 @@ package io.github.yas99en.moreemacsnb.core.actions;
 import java.awt.event.ActionEvent;
 import javax.swing.text.JTextComponent;
 import javax.swing.text.TextAction;
+import org.netbeans.editor.BaseDocument;
+import org.netbeans.lib.editor.util.swing.DocumentUtilities;
 
 /**
  *
@@ -30,4 +32,17 @@ public abstract class MoreEmacsAction extends TextAction {
     }
 
     public abstract void actionPerformed(ActionEvent e, JTextComponent target);
+    
+    public void modifyAtomicAsUser(JTextComponent target, Runnable runnable) {
+        BaseDocument doc = (BaseDocument)target.getDocument();
+        doc.runAtomicAsUser (() -> {
+            try {
+                DocumentUtilities.setTypingModification(doc, true);
+                runnable.run();
+            } finally {
+                DocumentUtilities.setTypingModification(doc, false);
+            }
+        });
+        
+    }
 }

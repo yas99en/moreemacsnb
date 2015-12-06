@@ -5,6 +5,7 @@ import javax.swing.text.Caret;
 import javax.swing.text.Document;
 import javax.swing.text.JTextComponent;
 import org.netbeans.api.editor.EditorActionRegistration;
+import org.netbeans.editor.BaseDocument;
 
 
 @EditorActionRegistration(name="io-github-yas99en-moreemacsnb-core-actions-BackwardKillWordAction")
@@ -24,7 +25,10 @@ public final class BackwardKillWordAction extends MoreEmacsAction {
         Caret caret = target.getCaret();
         int current = caret.getDot();
         int prev = BackwardWordAction.getPreviousWordPosition(doc, current);
-        caret.moveDot(prev);
-        target.cut();
+
+        modifyAtomicAsUser(target, () -> {
+            caret.moveDot(prev);
+            target.cut();
+        });
     }
 }

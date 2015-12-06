@@ -42,19 +42,14 @@ public class KillRegionAction extends MoreEmacsAction {
             cutAction.actionPerformed(e);
             return;
         }
-        
-        BaseDocument doc = (BaseDocument)target.getDocument();
-        doc.runAtomicAsUser (() -> {
-            try {
-                DocumentUtilities.setTypingModification(doc, true);
-                int mark = Mark.get(target);
-                int dot = caret.getDot();
-                caret.setDot(mark);
-                caret.moveDot(dot);
-                target.cut();
-            } finally {
-                DocumentUtilities.setTypingModification(doc, false);
-            }
+
+        int mark = Mark.get(target);
+        int dot = caret.getDot();
+
+        modifyAtomicAsUser(target, () -> {
+            caret.setDot(mark);
+            caret.moveDot(dot);
+            target.cut();
         });
     }
 }
