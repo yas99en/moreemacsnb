@@ -2,7 +2,6 @@ package io.github.yas99en.moreemacsnb.core.actions;
 
 import java.awt.event.ActionEvent;
 import javax.swing.text.Caret;
-import javax.swing.text.Document;
 import javax.swing.text.JTextComponent;
 import org.netbeans.api.editor.EditorActionRegistration;
 import org.netbeans.editor.BaseDocument;

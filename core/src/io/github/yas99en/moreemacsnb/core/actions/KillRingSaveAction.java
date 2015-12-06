@@ -12,8 +12,6 @@ import javax.swing.text.Caret;
 import javax.swing.text.DefaultEditorKit;
 import javax.swing.text.JTextComponent;
 import org.netbeans.api.editor.*;
-import org.netbeans.editor.BaseDocument;
-import org.netbeans.lib.editor.util.swing.DocumentUtilities;
 
 
 /**
