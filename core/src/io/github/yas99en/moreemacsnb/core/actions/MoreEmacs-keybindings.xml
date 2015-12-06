@@ -132,8 +132,8 @@ made subject to such option by the copyright holder.
     <bind actionName="paste-from-clipboard" key="S-INSERT"/>
     <bind actionName="remove-tab" key="S-TAB"/>
     <!--<bind actionName="remove-word-next" key="O-D"/>-->
-    <bind actionName="remove-word-previous" key="O-BACK_SPACE"/>
-    <bind actionName="remove-word-previous" key="C-BACK_SPACE"/>
+    <!--<bind actionName="remove-word-previous" key="O-BACK_SPACE"/>-->
+    <!--<bind actionName="remove-word-previous" key="C-BACK_SPACE"/>-->
     <bind actionName="replace" key="OS-5"/>
     <bind actionName="scroll-down" key="C-UP"/>
     <bind actionName="scroll-up" key="C-DOWN"/>
@@ -177,5 +177,6 @@ made subject to such option by the copyright holder.
     <bind actionName="io-github-yas99en-moreemacsnb-core-actions-BackwardWordAction" key="O-B"/>
     <bind actionName="io-github-yas99en-moreemacsnb-core-actions-BackwardWordAction" key="C-LEFT"/>
     <bind actionName="io-github-yas99en-moreemacsnb-core-actions-KillWordAction" key="O-D"/>
+    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-BackwardKillWordAction" key="O-BACK_SPACE"/>
     <bind actionName="io-github-yas99en-moreemacsnb-core-actions-ExchangePointAndMarkAction" key="C-X$C-X"/>
 </bindings>
