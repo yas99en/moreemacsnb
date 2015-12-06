@@ -3,3 +3,4 @@ build/
 nbbuild/
 dist/
 nbdist/
+/core/nbproject/private/

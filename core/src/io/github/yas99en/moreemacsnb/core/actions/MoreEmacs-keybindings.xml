@@ -69,10 +69,10 @@ made subject to such option by the copyright holder.
     <bind actionName="caret-forward" key="C-F"/>
     <bind actionName="caret-forward" key="RIGHT"/>
     <bind actionName="caret-line-first-column" key="C-A"/>
-    <bind actionName="caret-next-word" key="O-F"/>
-    <bind actionName="caret-next-word" key="C-RIGHT"/>
-    <bind actionName="caret-previous-word" key="O-B"/>
-    <bind actionName="caret-previous-word" key="C-LEFT"/>
+    <!--<bind actionName="caret-next-word" key="O-F"/>-->
+    <!--<bind actionName="caret-next-word" key="C-RIGHT"/>-->
+    <!--<bind actionName="caret-previous-word" key="O-B"/>-->
+    <!--<bind actionName="caret-previous-word" key="C-LEFT"/>-->
     <bind actionName="caret-up" key="C-P"/>
     <bind actionName="caret-up" key="UP"/>
     <bind actionName="caret-up" key="KP_UP"/>
@@ -172,4 +172,8 @@ made subject to such option by the copyright holder.
     <bind actionName="io-github-yas99en-moreemacsnb-core-actions-SetMarkAction" key="C-SPACE"/>
     <bind actionName="io-github-yas99en-moreemacsnb-core-actions-KillRingSaveAction" key="O-W"/>
     <bind actionName="io-github-yas99en-moreemacsnb-core-actions-KillRegionAction" key="C-W"/>
+    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-ForwardWordAction" key="O-F"/>
+    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-ForwardWordAction" key="C-RIGHT"/>
+    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-BackwardWordAction" key="O-B"/>
+    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-BackwardWordAction" key="C-LEFT"/>
 </bindings>
