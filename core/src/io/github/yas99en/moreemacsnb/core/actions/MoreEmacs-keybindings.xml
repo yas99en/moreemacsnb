@@ -156,6 +156,7 @@ made subject to such option by the copyright holder.
     <bind actionName="shift-line-left" key="O-0$C-X$TAB"/>
     <bind actionName="shift-line-right" key="C-X$TAB"/>
     <bind actionName="split-line" key="C-ENTER"/>
+    <bind actionName="split-line" key="C-O"/>
     <bind actionName="start-macro-recording" key="C-X$S-9"/>
     <bind actionName="start-new-line" key="S-ENTER"/>
     <bind actionName="stop-macro-recording" key="C-X$S-0"/>
