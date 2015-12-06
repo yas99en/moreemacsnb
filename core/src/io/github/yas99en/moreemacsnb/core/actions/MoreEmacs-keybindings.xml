@@ -176,4 +176,5 @@ made subject to such option by the copyright holder.
     <bind actionName="io-github-yas99en-moreemacsnb-core-actions-ForwardWordAction" key="C-RIGHT"/>
     <bind actionName="io-github-yas99en-moreemacsnb-core-actions-BackwardWordAction" key="O-B"/>
     <bind actionName="io-github-yas99en-moreemacsnb-core-actions-BackwardWordAction" key="C-LEFT"/>
+    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-ExchangePointAndMarkAction" key="C-X$C-X"/>
 </bindings>
