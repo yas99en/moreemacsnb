@@ -6,11 +6,14 @@
 package io.github.yas99en.moreemacsnb.core.actions;
 
 import java.awt.event.ActionEvent;
-import java.util.Arrays;
-import javax.swing.ActionMap;
+import javax.swing.Action;
 import javax.swing.text.Caret;
 import javax.swing.text.JTextComponent;
 import org.netbeans.api.editor.EditorActionRegistration;
+import org.netbeans.editor.BaseKit;
+import org.netbeans.editor.Utilities;
+import org.netbeans.editor.ext.ExtKit.ToggleCommentAction;
+import static org.netbeans.editor.ext.ExtKit.toggleCommentAction;
 
 /**
  *
@@ -24,8 +27,36 @@ public class CommentRegionAction extends MoreEmacsAction {
 
     @Override
     public void actionPerformed(ActionEvent e, JTextComponent target) {
-        ActionMap actionMap = target.getActionMap();
-        System.out.println("actions: " + Arrays.asList(actionMap.keys()));
+        System.out.println("CommentRegionAction.actionPerformed()");
+
+        BaseKit kit = Utilities.getKit(target);
+        if(kit == null) {
+            target.getToolkit().beep();
+            return;
+        }
+        
+        Action action = kit.getActionByName(toggleCommentAction);
+        if (!(action instanceof ToggleCommentAction)) {
+            target.getToolkit().beep();
+            return;
+        }
+        
+        ToggleCommentAction toggleCommentAction = (ToggleCommentAction)action;
+        
+        Caret caret = target.getCaret();
+        int dot = caret.getDot();
+        if(dot != caret.getMark()) {
+            toggleCommentAction.actionPerformed(e, target);
+            return;
+        }
+        
+        modifyAtomicAsUser(target, () -> {
+            caret.setDot(Mark.get(target));
+            caret.moveDot(dot);
+            toggleCommentAction.actionPerformed(e, target);
+            int newDot = caret.getDot();
+            target.select(newDot, newDot);
+        });
     }
     
 }

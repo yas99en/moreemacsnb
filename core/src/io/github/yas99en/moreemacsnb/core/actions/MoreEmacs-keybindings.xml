@@ -78,7 +78,7 @@ made subject to such option by the copyright holder.
     <bind actionName="caret-up" key="UP"/>
     <bind actionName="caret-up" key="KP_UP"/>
     <!--<bind actionName="comment" key="C-C$C-C"/>-->
-    <bind actionName="toggle-comment" key="C-C$C-C"/>
+    <!--<bind actionName="toggle-comment" key="C-C$C-C"/>-->
     <bind actionName="collapse-fold" key="C-MINUS"/>
     <bind actionName="collapse-all-folds" key="CS-SUBTRACT"/>
     <bind actionName="collapse-fold" key="C-SUBTRACT"/>
@@ -185,5 +185,5 @@ made subject to such option by the copyright holder.
     <bind actionName="io-github-yas99en-moreemacsnb-core-actions-DowncaseWordAction" key="O-L"/>
     <bind actionName="io-github-yas99en-moreemacsnb-core-actions-TransposeCharsAction" key="C-T"/>
     <bind actionName="io-github-yas99en-moreemacsnb-core-actions-TransposeWordAction" key="O-T"/>
-    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-CommentRegionAction" key="O-E"/>
+    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-CommentRegionAction" key="C-C$C-C"/>
 </bindings>
