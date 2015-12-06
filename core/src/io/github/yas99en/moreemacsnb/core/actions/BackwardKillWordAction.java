@@ -16,7 +16,8 @@ public final class BackwardKillWordAction extends MoreEmacsAction {
 
     @Override
     public void actionPerformed(ActionEvent e, JTextComponent target) {
-        if (!target.isEditable()) {
+        if (!target.isEditable() || !target.isEnabled()) {
+            target.getToolkit().beep();
             return;
         }
 

@@ -34,7 +34,8 @@ public class TransposeWordAction extends MoreEmacsAction {
     }
 
     public void doActionPerformed(ActionEvent e, JTextComponent target) throws BadLocationException {
-        if(!target.isEditable()) {
+        if(!target.isEditable() || !target.isEnabled()) {
+            target.getToolkit().beep();
             return;
         }
 
