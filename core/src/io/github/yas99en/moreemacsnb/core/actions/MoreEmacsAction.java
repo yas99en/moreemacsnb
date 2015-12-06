@@ -33,7 +33,7 @@ public abstract class MoreEmacsAction extends TextAction {
 
     public abstract void actionPerformed(ActionEvent e, JTextComponent target);
     
-    public void modifyAtomicAsUser(JTextComponent target, Runnable runnable) {
+    public static void modifyAtomicAsUser(JTextComponent target, Runnable runnable) {
         BaseDocument doc = (BaseDocument)target.getDocument();
         doc.runAtomicAsUser (() -> {
             try {
