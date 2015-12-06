@@ -170,6 +170,7 @@ made subject to such option by the copyright holder.
     <!--<bind actionName="word-match-next" key="O-SLASH"/>-->
 
     <bind actionName="io-github-yas99en-moreemacsnb-core-actions-SetMarkAction" key="C-SPACE"/>
+    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-ExchangePointAndMarkAction" key="C-X$C-X"/>
     <bind actionName="io-github-yas99en-moreemacsnb-core-actions-KillRingSaveAction" key="O-W"/>
     <bind actionName="io-github-yas99en-moreemacsnb-core-actions-KillRegionAction" key="C-W"/>
     <bind actionName="io-github-yas99en-moreemacsnb-core-actions-ForwardWordAction" key="O-F"/>
@@ -178,5 +179,4 @@ made subject to such option by the copyright holder.
     <bind actionName="io-github-yas99en-moreemacsnb-core-actions-BackwardWordAction" key="C-LEFT"/>
     <bind actionName="io-github-yas99en-moreemacsnb-core-actions-KillWordAction" key="O-D"/>
     <bind actionName="io-github-yas99en-moreemacsnb-core-actions-BackwardKillWordAction" key="O-BACK_SPACE"/>
-    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-ExchangePointAndMarkAction" key="C-X$C-X"/>
 </bindings>

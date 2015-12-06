@@ -19,29 +19,40 @@ class Mark {
     public static void update(JTextComponent target) {
         Caret caret = target.getCaret();
         if(caret.getDot() != caret.getMark()) {
-            set(target, caret.getMark());
+            put(target, caret.getMark());
+            return;
+        }
+
+        Object markObj = target.getClientProperty(MARK_KEY);
+        if(markObj == null || !(markObj instanceof Integer)) {
+            put(target, 0);
+            return;
+        }
+
+        int mark = (Integer) markObj;
+        if(mark < 0) {
+            put(target, 0);
+            return;
+        }
+
+        int length = target.getDocument().getLength();
+        if(mark > length) {
+            put(target, length);
+            return;
         }
     }
 
-    public static void set(JTextComponent target, int mark) {
-        int length = target.getDocument().getLength();
-        if(mark < 0) {
-            mark = 0;
-        }
-        if(mark > length) {
-            mark = length;
-        }
+    private static void put(JTextComponent target, int mark) {
         target.putClientProperty(MARK_KEY, mark);
     }
 
+    public static void set(JTextComponent target, int mark) {
+        put(target, mark);
+        update(target);
+    }
+
     public static int get(JTextComponent target) {
-        Object markObj = target.getClientProperty(MARK_KEY);
-        if(markObj == null) {
-            return 0;
-        }
-        int mark = (Integer) markObj;
-        int length = target.getDocument().getLength();
-        
-        return (mark <= length) ? mark : length;
+        update(target);
+        return (Integer) target.getClientProperty(MARK_KEY);
     }
 }
