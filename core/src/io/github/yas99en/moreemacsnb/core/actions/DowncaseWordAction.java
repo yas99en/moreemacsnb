@@ -5,7 +5,6 @@
  */
 package io.github.yas99en.moreemacsnb.core.actions;
 
-import io.github.yas99en.moreemacsnb.core.utils.CodePointIterator;
 import org.netbeans.api.editor.EditorActionRegistration;
 
 /**

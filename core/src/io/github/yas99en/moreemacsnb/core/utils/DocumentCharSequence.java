@@ -2,10 +2,6 @@ package io.github.yas99en.moreemacsnb.core.utils;
 
 import javax.swing.text.BadLocationException;
 import javax.swing.text.Document;
-import org.netbeans.editor.BaseDocument;
-
-
-
 
 public final class DocumentCharSequence implements CharSequence {
     private final Document doc;
