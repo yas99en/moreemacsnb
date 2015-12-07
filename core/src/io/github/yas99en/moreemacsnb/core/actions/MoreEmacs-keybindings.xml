@@ -188,4 +188,5 @@ made subject to such option by the copyright holder.
     <bind actionName="io-github-yas99en-moreemacsnb-core-actions-TransposeWordAction" key="O-T"/>
     <bind actionName="io-github-yas99en-moreemacsnb-core-actions-CommentRegionAction" key="C-C$C-C"/>
     <bind actionName="io-github-yas99en-moreemacsnb-core-actions-DeleteHorizontalSpaceAction" key="O-BACK_SLASH"/>
+    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-KeyboardQuitAction" key="C-G"/>
 </bindings>

@@ -36,24 +36,22 @@ public class CommentRegionAction extends MoreEmacsAction {
         }
         
         Action action = kit.getActionByName(toggleCommentAction);
-        if (!(action instanceof ToggleCommentAction)) {
+        if (action == null) {
             target.getToolkit().beep();
             return;
         }
         
-        ToggleCommentAction toggleCommentAction = (ToggleCommentAction)action;
-        
         Caret caret = target.getCaret();
         int dot = caret.getDot();
         if(dot != caret.getMark()) {
-            toggleCommentAction.actionPerformed(e, target);
+            action.actionPerformed(e);
             return;
         }
         
         modifyAtomicAsUser(target, () -> {
             caret.setDot(Mark.get(target));
             caret.moveDot(dot);
-            toggleCommentAction.actionPerformed(e, target);
+            action.actionPerformed(e);
             int newDot = caret.getDot();
             target.select(newDot, newDot);
         });

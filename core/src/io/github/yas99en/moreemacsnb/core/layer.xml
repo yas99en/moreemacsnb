@@ -79,9 +79,11 @@
             <file name="S-F12.shadow">
                 <attr name="originalFile" stringvalue="Actions/System/org-netbeans-core-actions-JumpPrevAction.instance"/>
             </file>
+            <!--
             <file name="C-G.shadow">
                 <attr name="originalFile" stringvalue="Actions/Edit/org-openide-actions-GotoAction.instance"/>
             </file>
+            -->
             <file name="S-F2.shadow">
                 <attr name="originalFile" stringvalue="Actions/Edit/bookmark-history-popup-previous.instance"/>
             </file>
