@@ -1,21 +1,22 @@
 package io.github.yas99en.moreemacsnb.core.utils;
 
 import javax.swing.text.BadLocationException;
+import javax.swing.text.Document;
 import org.netbeans.editor.BaseDocument;
 
 
 
 
 public final class DocumentCharSequence implements CharSequence {
-    private final BaseDocument doc;
+    private final Document doc;
     private final int offset;
     private final int length;
 
-    public DocumentCharSequence(BaseDocument doc) {
+    public DocumentCharSequence(Document doc) {
         this(doc, 0, doc.getLength());
     }
     
-    public DocumentCharSequence(BaseDocument doc, int offset, int length) {
+    public DocumentCharSequence(Document doc, int offset, int length) {
         if(doc == null) {
             throw new NullPointerException("doc is null");
         }
@@ -39,7 +40,7 @@ public final class DocumentCharSequence implements CharSequence {
             throw new IndexOutOfBoundsException();
         }
         try {
-            return doc.getChars(offset + index, 1)[0];
+            return doc.getText(index, 1).charAt(0);
         } catch (BadLocationException e) {
             throw new IndexOutOfBoundsException(e.getMessage());
         }

@@ -6,6 +6,7 @@
 package io.github.yas99en.moreemacsnb.core.actions;
 
 import io.github.yas99en.moreemacsnb.core.utils.CodePointIterator;
+import io.github.yas99en.moreemacsnb.core.utils.DocumentCharSequence;
 import java.awt.event.ActionEvent;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -33,13 +34,7 @@ public class BackwardWordAction extends MoreEmacsAction {
     }
     
     public static int getPreviousWordPosition(Document doc, int offset) {
-        CharSequence seq;
-        try {
-            seq = doc.getText(0, offset);
-        } catch (BadLocationException ex) {
-            Logger.getLogger(BackwardWordAction.class.getName()).log(Level.SEVERE, null, ex);
-            throw new AssertionError(ex.getMessage(), ex);
-        }
+        DocumentCharSequence seq = new DocumentCharSequence(doc, 0, offset);
         CodePointIterator itr = new CodePointIterator(seq, seq.length());
         
         for(; itr.hasPrevious(); ) {
