@@ -189,4 +189,6 @@ made subject to such option by the copyright holder.
     <bind actionName="io-github-yas99en-moreemacsnb-core-actions-CommentRegionAction" key="C-C$C-C"/>
     <bind actionName="io-github-yas99en-moreemacsnb-core-actions-DeleteHorizontalSpaceAction" key="O-BACK_SLASH"/>
     <bind actionName="io-github-yas99en-moreemacsnb-core-actions-KeyboardQuitAction" key="C-G"/>
+    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-KillRectangleAction" key="C-X$R$K"/>
+    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-YankRectangleAction" key="C-X$R$Y"/>
 </bindings>
