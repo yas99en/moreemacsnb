@@ -36,7 +36,7 @@ public final class DocumentCharSequence implements CharSequence {
             throw new IndexOutOfBoundsException();
         }
         try {
-            return doc.getText(index, 1).charAt(0);
+            return doc.getText(offset+index, 1).charAt(0);
         } catch (BadLocationException e) {
             throw new IndexOutOfBoundsException(e.getMessage());
         }

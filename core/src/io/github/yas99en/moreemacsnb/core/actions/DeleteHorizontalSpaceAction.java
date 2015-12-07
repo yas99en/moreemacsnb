@@ -10,6 +10,7 @@ import io.github.yas99en.moreemacsnb.core.utils.DocumentCharSequence;
 import java.awt.event.ActionEvent;
 import javax.swing.text.BadLocationException;
 import javax.swing.text.Caret;
+import javax.swing.text.Document;
 import javax.swing.text.Element;
 import javax.swing.text.JTextComponent;
 import org.netbeans.api.editor.EditorActionRegistration;
@@ -27,7 +28,7 @@ public class DeleteHorizontalSpaceAction extends MoreEmacsAction {
 
     @Override
     public void actionPerformed(ActionEvent e, JTextComponent target) {
-        BaseDocument doc = (BaseDocument)target.getDocument();
+        Document doc = target.getDocument();
 
         if(!target.isEditable()) {
             return;
@@ -45,7 +46,7 @@ public class DeleteHorizontalSpaceAction extends MoreEmacsAction {
         }
     }
     
-    int skipBackwardSpaces(BaseDocument doc, int offset) throws BadLocationException {
+    int skipBackwardSpaces(Document doc, int offset) throws BadLocationException {
         Element rootElem = doc.getDefaultRootElement();
         int linePos = rootElem.getElementIndex(offset);
         Element line = rootElem.getElement(linePos);
@@ -65,7 +66,7 @@ public class DeleteHorizontalSpaceAction extends MoreEmacsAction {
         return result;
     }
     
-    int skipForwardSpaces(BaseDocument doc, int offset) throws BadLocationException {
+    int skipForwardSpaces(Document doc, int offset) throws BadLocationException {
         Element rootElem = doc.getDefaultRootElement();
         int linePos = rootElem.getElementIndex(offset);
         Element line = rootElem.getElement(linePos);
