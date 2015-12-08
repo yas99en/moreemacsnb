@@ -140,7 +140,10 @@
             </file>
             <file name="D-F4.shadow">
         	    <attr name="originalFile" stringvalue="Actions/Window/org-netbeans-core-windows-actions-CloseWindowAction.instance"/>
-        	</file>
+            </file>
+            <file name="C-X 0.shadow">
+        	    <attr name="originalFile" stringvalue="Actions/Window/org-netbeans-core-windows-actions-CloseWindowAction.instance"/>
+            </file>
             <file name="F8.shadow">
                 <attr name="originalFile" stringvalue="Actions/Debug/org-netbeans-modules-debugger-ui-actions-StepOverAction.instance"/>
             </file>
