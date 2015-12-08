@@ -49,11 +49,6 @@ public final class KillRectangleAction extends MoreEmacsAction {
         int endRow = rootElem.getElementIndex(end);
         int endColumn = ColumnUtils.getColumn(doc, end, getTabStop());
         
-        if(startColumn > endColumn) {
-            int work = startColumn;
-            startColumn = endColumn;
-            endColumn = work;
-        }
         int leftColumn  = (startColumn <  endColumn) ? startColumn : endColumn;
         int rightColumn = (startColumn >= endColumn) ? startColumn : endColumn;
 
