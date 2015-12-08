@@ -26,9 +26,6 @@ public class KillRingSaveAction extends MoreEmacsAction  {
 
     @Override
     public void actionPerformed(ActionEvent e, JTextComponent target) {
-        if (!target.isEditable()) {
-            return;
-        }
         Caret caret = target.getCaret();
         ActionMap actionMap = target.getActionMap();
         if(actionMap == null)  {

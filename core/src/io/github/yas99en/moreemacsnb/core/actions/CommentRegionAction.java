@@ -12,7 +12,6 @@ import javax.swing.text.JTextComponent;
 import org.netbeans.api.editor.EditorActionRegistration;
 import org.netbeans.editor.BaseKit;
 import org.netbeans.editor.Utilities;
-import org.netbeans.editor.ext.ExtKit.ToggleCommentAction;
 import static org.netbeans.editor.ext.ExtKit.toggleCommentAction;
 
 /**
@@ -28,6 +27,11 @@ public class CommentRegionAction extends MoreEmacsAction {
     @Override
     public void actionPerformed(ActionEvent e, JTextComponent target) {
         System.out.println("CommentRegionAction.actionPerformed()");
+
+        if (!target.isEditable() || !target.isEnabled()) {
+            target.getToolkit().beep();
+            return;
+        }
 
         BaseKit kit = Utilities.getKit(target);
         if(kit == null) {

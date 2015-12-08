@@ -30,7 +30,8 @@ public class DeleteHorizontalSpaceAction extends MoreEmacsAction {
     public void actionPerformed(ActionEvent e, JTextComponent target) {
         Document doc = target.getDocument();
 
-        if(!target.isEditable()) {
+        if (!target.isEditable() || !target.isEnabled()) {
+            target.getToolkit().beep();
             return;
         }
         
