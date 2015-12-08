@@ -78,7 +78,6 @@ public class TransposeCharsAction extends MoreEmacsAction {
 
         int pos = current-backwardChars.length();
         int len = backwardChars.length() + forwardChars.length();
-        int dot = current;
         
         modifyAtomicAsUser(target, () -> {
             try {
