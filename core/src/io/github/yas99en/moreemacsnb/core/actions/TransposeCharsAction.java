@@ -48,18 +48,10 @@ public class TransposeCharsAction extends MoreEmacsAction {
 
         BaseDocument doc = (BaseDocument)target.getDocument();
         Element rootElem = doc.getDefaultRootElement();
-        System.out.println("elem count: " + rootElem.getElementCount());
-        System.out.println("current elem index: " + rootElem.getElementIndex(caret.getDot()));
-        
         int linePos = rootElem.getElementIndex(current);
         Element line = rootElem.getElement(linePos);
 
         DocumentCharSequence seq = new DocumentCharSequence(doc);
-        
-        System.out.println("current: "+ current);
-        System.out.println("start offset: "+ line.getStartOffset());
-        System.out.println("end   offset: "+ line.getEndOffset());
-
         boolean onLineStart = (line.getStartOffset() == current);
         boolean onLineEnd   = (line.getEndOffset()-1 == current);
 
