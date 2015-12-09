@@ -16,10 +16,10 @@ import org.netbeans.api.editor.EditorActionRegistration;
  *
  * @author Yasuhiro Endoh
  */
-@EditorActionRegistration(name="io-github-yas99en-moreemacsnb-core-actions-TransposeWordAction")
-public class TransposeWordAction extends MoreEmacsAction {
-    public TransposeWordAction() {
-        super("transpose-word");
+@EditorActionRegistration(name="io-github-yas99en-moreemacsnb-core-actions-TransposeWordsAction")
+public class TransposeWordsAction extends MoreEmacsAction {
+    public TransposeWordsAction() {
+        super("transpose-words");
     }
 
     @Override
