@@ -1,12 +1,8 @@
 Licence of More Emacs for NetBeans
 
 The following two files are distributed under CDDL.
-- core/src/io/github/yas99en/moreemacsnb/core/layer.xml
-- core/src/io/github/yas99en/moreemacsnb/core/actions/MoreEmacs-keybindings.xml
-
-The icu4j library is distributed under ICU Licence.
-- icu/release/modules/ext/icu4j-56_1.jar
-See icu/ICU_License.html
+- io/github/yas99en/moreemacsnb/core/layer.xml
+- io/github/yas99en/moreemacsnb/core/actions/MoreEmacs-keybindings.xml
 
 All other files are distributed under BSD-like licence.
 See the following texts.
