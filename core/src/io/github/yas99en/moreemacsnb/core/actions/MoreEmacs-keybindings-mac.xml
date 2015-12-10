@@ -88,7 +88,7 @@ made subject to such option by the copyright holder.
     <bind actionName="completion-show" key="M-SLASH"/>
 
     <bind key="O-BACK_SLASH" remove="true"/>
-    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-DeleteHorizontalSpaceAction" key="O-BACK_SLASH"/>
+    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-DeleteHorizontalSpaceAction" key="M-BACK_SLASH"/>
 
     <bind key="O-U" remove="true"/>
     <bind actionName="io-github-yas99en-moreemacsnb-core-actions-CapitalizeWordAction" key="M-U"/>
