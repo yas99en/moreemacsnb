@@ -1,8 +1,12 @@
 Licence of More Emacs for NetBeans
 
-The following two files are distributed under CDDL.
+The following files are distributed under CDDL.
+- io/github/yas99en/moreemacsnb/core/Emacs-layer.xml
+- io/github/yas99en/moreemacsnb/core/actions/Emacs-keybindings.xml
+- io/github/yas99en/moreemacsnb/core/actions/Emacs-keybindings-mac.xml
 - io/github/yas99en/moreemacsnb/core/layer.xml
 - io/github/yas99en/moreemacsnb/core/actions/MoreEmacs-keybindings.xml
+- io/github/yas99en/moreemacsnb/core/actions/MoreEmacs-keybindings-mac.xml
 See each files.
 
 All other files are distributed under BSD-like licence.

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS HEADER.
+
+Copyright 1997-2010 Oracle and/or its affiliates. All rights reserved.
+
+Oracle and Java are registered trademarks of Oracle and/or its affiliates.
+Other names may be trademarks of their respective owners.
+
+
+The contents of this file are subject to the terms of either the GNU
+General Public License Version 2 only ("GPL") or the Common
+Development and Distribution License("CDDL") (collectively, the
+"License"). You may not use this file except in compliance with the
+License. You can obtain a copy of the License at
+http://www.netbeans.org/cddl-gplv2.html
+or nbbuild/licenses/CDDL-GPL-2-CP. See the License for the
+specific language governing permissions and limitations under the
+License.  When distributing the software, include this License Header
+Notice in each file and include the License file at
+nbbuild/licenses/CDDL-GPL-2-CP.  Oracle designates this
+particular file as subject to the "Classpath" exception as provided
+by Oracle in the GPL Version 2 section of the License file that
+accompanied this code. If applicable, add the following below the
+License Header, with the fields enclosed by brackets [] replaced by
+your own identifying information:
+"Portions Copyrighted [year] [name of copyright owner]"
+
+Contributor(s):
+
+The Original Software is NetBeans. The Initial Developer of the Original
+Software is Sun Microsystems, Inc. Portions Copyright 1997-2007 Sun
+Microsystems, Inc. All Rights Reserved.
+
+If you wish your version of this file to be governed by only the CDDL
+or only the GPL Version 2, indicate your decision by adding
+"[Contributor] elects to include this software in this distribution
+under the [CDDL or GPL Version 2] license." If you do not indicate a
+single choice of license, a recipient has the option to distribute
+your version of this file under either the CDDL, the GPL Version 2 or
+to extend the choice of license to its licensees as provided above.
+However, if you add GPL Version 2 code and therefore, elected the GPL
+Version 2 license, then the option applies only if the new code is
+made subject to such option by the copyright holder.
+-->
+<!--Contritutor: Yasuhiro Endoh -->
+<!DOCTYPE bindings PUBLIC "-//NetBeans//DTD Editor KeyBindings settings 1.1//EN" "http://www.netbeans.org/dtds/EditorKeyBindings-1_1.dtd">
+
+<!--
+    IMPORTANT:  This file modifies keybindings from Emacs-keybindings.xml to make them work on Mac OS.
+-->
+
+<bindings>
+    
+    <!-- Things we add that replace standard keybindings -->
+    <bind key="CO-G" remove="true"/>
+    <bind key="CM-G" actionName="goto-declaration"/>
+    
+    <bind key="O-D" remove="true"/>
+    <bind key="M-D" actionName="io-github-yas99en-moreemacsnb-core-actions-KillWordAction"/>
+    
+    <bind key="O-W" remove="true"/>
+    <bind key="M-W" actionName="io-github-yas99en-moreemacsnb-core-actions-KillRingSaveAction"/>
+
+    <bind key="O-G$G" remove="true"/>
+    <bind key="O-G$O-G" remove="true"/>
+    <bind key="M-G$G" actionName="goto"/>
+    <bind key="M-G$M-G" actionName="goto" />
+    
+    <bind key="O-V" remove="true"/>
+    <bind key="M-V" actionName="page-up"/>
+    
+    <bind key="O-P" remove="true"/>
+    <bind actionName="tooltip-show" key="M-P"/>
+    
+    <bind key="O-B" remove="true"/>
+    <bind key="O-BACK_SPACE" remove="true"/>
+    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-BackwardWordAction" key="M-B"/>
+    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-BackwardWordAction" key="M-BACK_SPACE"/>
+
+    <bind key="O-F" remove="true"/>
+    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-ForwardWordAction" key="M-F"/>
+
+    <bind key="O-S" remove="true"/>
+    <bind actionName="find-next" key="M-S"/>
+
+    <bind key="O-SLASH" remove="true"/>
+    <bind actionName="completion-show" key="M-SLASH"/>
+
+    <bind key="O-BACK_SLASH" remove="true"/>
+    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-DeleteHorizontalSpaceAction" key="O-BACK_SLASH"/>
+
+    <bind key="O-U" remove="true"/>
+    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-CapitalizeWordAction" key="M-U"/>
+    <bind key="O-L" remove="true"/>
+    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-DowncaseWordAction" key="M-L"/>
+    <bind key="O-T" remove="true"/>
+    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-TransposeWordsAction" key="M-T"/>
+
+    <bind key="CO-SLASH" remove="true"/>
+    <bind actionName="all-completion-show" key="CM-SLASH"/>
+
+    <bind key="OS-COMMA" remove="true"/>
+    <bind actionName="caret-begin" key="MS-COMMA"/>
+    <bind key="OS-PERIOD" remove="true"/>
+    <bind actionName="caret-end" key="MS-PERIOD"/>
+
+    <bind key="OS-F" remove="true"/>
+    <bind actionName="fix-imports" key="MS-F"/>
+    <bind key="CO-BACK_SLASH" remove="true"/>
+    <bind actionName="format" key="CM-BACK_SLASH"/>
+
+    <bind key="O-0$C-K" remove="true"/>
+    <bind actionName="cut-to-line-begin" key="M-0$C-K"/>
+
+    <bind key="O-G$G" remove="true"/>
+    <bind actionName="goto" key="M-G$G"/>
+    <bind key="O-G$O-G" remove="true"/>
+    <bind actionName="goto" key="M-G$M-G"/>
+    <bind key="O-PERIOD" remove="true"/>
+    <bind actionName="goto-declaration" key="M-PERIOD"/>
+    <bind key="CO-G" remove="true"/>
+    <bind actionName="goto-declaration" key="CM-G"/>
+
+    <bind key="OS-5" remove="true"/>
+    <bind actionName="replace" key="MS-5"/>
+
+    <bind key="CO-W" remove="true"/>
+    <bind actionName="select-word" key="CM-W"/>
+
+    <bind key="O-0$C-X$TAB" remove="true"/>
+    <bind actionName="shift-line-left" key="M-0$C-X$TAB"/>
+
+    <bind key="O-0$C-C$C-C" remove="true"/>
+    <bind actionName="uncomment" key="M-0$C-C$C-C"/>
+
+    <!-- Things we add only on the mac -->
+    <bind key="C-P" actionName="caret-up"/>
+    <bind key="C-W" actionName="io-github-yas99en-moreemacsnb-core-actions-KillRegionAction"/>
+    <bind key="C-D" actionName="delete-next"/>
+    <bind key="C-V" actionName="page-down"/>
+    <bind key="M-UP" actionName="page-up"/> <!-- macbook support -->
+    <bind key="M-DOWN" actionName="page-down"/> <!-- macbook support -->
+    
+</bindings>

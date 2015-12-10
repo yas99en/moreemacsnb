@@ -43,16 +43,13 @@ However, if you add GPL Version 2 code and therefore, elected the GPL
 Version 2 license, then the option applies only if the new code is
 made subject to such option by the copyright holder.
 -->
-<!--Contritutor: Yasuhiro Endoh -->
 <!DOCTYPE bindings PUBLIC "-//NetBeans//DTD Editor KeyBindings settings 1.1//EN" "http://www.netbeans.org/dtds/EditorKeyBindings-1_1.dtd">
 
 <bindings>
     <bind actionName="abbrev-expand" key="S-SPACE"/>
-    <!--<bind actionName="adjust-caret-center" key="C-L"/>-->
-    <!--<bind actionName="adjust-window-center" key="C-U$C-L"/>-->
-    <bind actionName="adjust-window-center" key="C-L"/>
-<!--    <bind actionName="all-completion-show" key="CO-SPACE"/>-->
-    <bind actionName="all-completion-show" key="CO-SLASH"/>
+    <bind actionName="adjust-caret-center" key="C-L"/>
+    <bind actionName="adjust-window-center" key="C-U$C-L"/>
+    <bind actionName="all-completion-show" key="CO-SPACE"/>
     <bind actionName="annotations-cycling" key="CS-C"/>
     <bind actionName="caret-backward" key="C-B"/>
     <bind actionName="caret-backward" key="LEFT"/>
@@ -72,33 +69,29 @@ made subject to such option by the copyright holder.
     <bind actionName="caret-forward" key="C-F"/>
     <bind actionName="caret-forward" key="RIGHT"/>
     <bind actionName="caret-line-first-column" key="C-A"/>
-
-    <!--<bind actionName="caret-next-word" key="O-F"/>-->
-    <!--<bind actionName="caret-next-word" key="C-RIGHT"/>-->
-    <!--<bind actionName="caret-previous-word" key="O-B"/>-->
-    <!--<bind actionName="caret-previous-word" key="C-LEFT"/>-->
+    <bind actionName="caret-next-word" key="O-F"/>
+    <bind actionName="caret-next-word" key="C-RIGHT"/>
+    <bind actionName="caret-previous-word" key="O-B"/>
+    <bind actionName="caret-previous-word" key="C-LEFT"/>
     <bind actionName="caret-up" key="C-P"/>
     <bind actionName="caret-up" key="UP"/>
     <bind actionName="caret-up" key="KP_UP"/>
-    <!--<bind actionName="comment" key="C-C$C-C"/>-->
-    <!--<bind actionName="toggle-comment" key="C-C$C-C"/>-->
+    <bind actionName="comment" key="C-C$C-C"/>
     <bind actionName="collapse-fold" key="C-MINUS"/>
     <bind actionName="collapse-all-folds" key="CS-SUBTRACT"/>
     <bind actionName="collapse-fold" key="C-SUBTRACT"/>
-    <!--<bind actionName="completion-show" key="C-SPACE"/>-->
-    <bind actionName="completion-show" key="O-SLASH"/>
+    <bind actionName="completion-show" key="C-SPACE"/>
     <bind actionName="completion-show" key="C-BACK_SLASH"/>
-    <!--<bind actionName="copy-to-clipboard" key="COPY"/>-->
-    <!--<bind actionName="copy-to-clipboard" key="O-W"/>-->
-    <!--<bind actionName="copy-to-clipboard" key="C-INSERT"/>-->
-    <!--<bind actionName="cut-to-clipboard" key="CUT"/>-->
-    <!--<bind actionName="cut-to-clipboard" key="C-W"/>-->    
+    <bind actionName="copy-to-clipboard" key="COPY"/>
+    <bind actionName="copy-to-clipboard" key="O-W"/>
+    <bind actionName="copy-to-clipboard" key="C-INSERT"/>
+    <bind actionName="cut-to-clipboard" key="CUT"/>
+    <bind actionName="cut-to-clipboard" key="C-W"/>    
     <bind actionName="cut-to-line-begin" key="O-0$C-K"/>
     <bind actionName="cut-to-line-end" key="C-K"/>
     <bind actionName="delete-next" key="DELETE"/>
     <bind actionName="delete-next" key="C-D"/> 
     <bind actionName="delete-previous" key="BACK_SPACE"/>
-    <bind actionName="delete-previous" key="C-H"/>
     <bind actionName="documentation-show" key="CS-SPACE"/>
     <bind actionName="expand-all-folds" key="CS-ADD"/>
     <bind actionName="expand-all-folds" key="CS-EQUALS"/>
@@ -121,13 +114,11 @@ made subject to such option by the copyright holder.
     <bind actionName="goto-declaration" key="CO-G"/>
     <bind actionName="in-place-refactoring" key="D-R"/>
     <bind actionName="insert-break" key="ENTER"/>
-    <bind actionName="insert-break" key="C-J"/>
     <bind actionName="insert-tab" key="C-Q$TAB"/>
-    <!--<bind actionName="make-getter" key="O-U$G"/>-->
-    <!--<bind actionName="make-is" key="O-U$I"/>-->
-    <!--<bind actionName="make-setter" key="O-U$S"/>-->
-<!--    <bind actionName="reindent-line" key="TAB"/>-->
-<!--    <bind actionName="reindent-line" key="C-I"/>-->
+    <bind actionName="make-getter" key="O-U$G"/>
+    <bind actionName="make-is" key="O-U$I"/>
+    <bind actionName="make-setter" key="O-U$S"/>
+    <bind actionName="reindent-line" key="TAB"/>
     <bind actionName="page-down" key="C-V"/>
     <bind actionName="page-down" key="PAGE_DOWN"/>
     <bind actionName="page-up" key="O-V"/>
@@ -136,9 +127,9 @@ made subject to such option by the copyright holder.
     <bind actionName="paste-from-clipboard" key="C-Y"/>
     <bind actionName="paste-from-clipboard" key="S-INSERT"/>
     <bind actionName="remove-tab" key="S-TAB"/>
-    <!--<bind actionName="remove-word-next" key="O-D"/>-->
-    <!--<bind actionName="remove-word-previous" key="O-BACK_SPACE"/>-->
-    <!--<bind actionName="remove-word-previous" key="C-BACK_SPACE"/>-->
+    <bind actionName="remove-word-next" key="O-D"/>
+    <bind actionName="remove-word-previous" key="O-BACK_SPACE"/>
+    <bind actionName="remove-word-previous" key="C-BACK_SPACE"/>
     <bind actionName="replace" key="OS-5"/>
     <bind actionName="scroll-down" key="C-UP"/>
     <bind actionName="scroll-up" key="C-DOWN"/>
@@ -159,7 +150,6 @@ made subject to such option by the copyright holder.
     <bind actionName="shift-line-left" key="O-0$C-X$TAB"/>
     <bind actionName="shift-line-right" key="C-X$TAB"/>
     <bind actionName="split-line" key="C-ENTER"/>
-    <bind actionName="split-line" key="C-O"/>
     <bind actionName="start-macro-recording" key="C-X$S-9"/>
     <bind actionName="start-new-line" key="S-ENTER"/>
     <bind actionName="stop-macro-recording" key="C-X$S-0"/>
@@ -173,31 +163,5 @@ made subject to such option by the copyright holder.
     <bind actionName="undo" key="C-X$U"/>
     <bind actionName="undo" key="C-SLASH"/>    
     <bind actionName="uncomment" key="O-0$C-C$C-C"/>
-    <!--<bind actionName="word-match-next" key="O-SLASH"/>-->
-
-    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-SetMarkAction" key="C-SPACE"/>
-    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-ExchangePointAndMarkAction" key="C-X$C-X"/>
-    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-KillRingSaveAction" key="COPY"/>
-    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-KillRingSaveAction" key="O-W"/>
-    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-KillRingSaveAction" key="C-INSERT"/>
-    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-KillRegionAction" key="CUT"/>
-    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-KillRegionAction" key="C-W"/>
-    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-ForwardWordAction" key="O-F"/>
-    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-ForwardWordAction" key="C-RIGHT"/>
-    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-BackwardWordAction" key="O-B"/>
-    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-BackwardWordAction" key="C-LEFT"/>
-    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-KillWordAction" key="O-D"/>
-    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-BackwardKillWordAction" key="O-BACK_SPACE"/>
-    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-CapitalizeWordAction" key="O-U"/>
-    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-DowncaseWordAction" key="O-L"/>
-    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-TransposeCharsAction" key="C-T"/>
-    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-TransposeWordsAction" key="O-T"/>
-    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-CommentRegionAction" key="C-C$C-C"/>
-    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-DeleteHorizontalSpaceAction" key="O-BACK_SLASH"/>
-    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-KeyboardQuitAction" key="C-G"/>
-    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-KillRectangleAction" key="C-X$R$K"/>
-    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-YankRectangleAction" key="C-X$R$Y"/>
-    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-NewLineAction" key="C-M"/>
-    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-IndentLineAction" key="C-I"/>
-    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-IndentLineAction" key="TAB"/>
+    <bind actionName="word-match-next" key="O-SLASH"/>
 </bindings>

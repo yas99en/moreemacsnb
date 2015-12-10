@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0"?>
 <!--
 DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS HEADER.
 
@@ -43,11 +43,13 @@ However, if you add GPL Version 2 code and therefore, elected the GPL
 Version 2 license, then the option applies only if the new code is
 made subject to such option by the copyright holder.
 -->
-<!--Contritutor: Yasuhiro Endoh -->
-<!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.2//EN" "http://www.netbeans.org/dtds/filesystem-1_2.dtd">
+<!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.0//EN" "http://www.netbeans.org/dtds/filesystem-1_0.dtd" [
+    <!ENTITY eclipse-keys SYSTEM "mf-layer-eclipse-keybinding.xml">
+]>
+
 <filesystem>
     <folder name="Keymaps">
-        <folder name="MoreEmacs">
+        <folder name="Emacs">
             <attr name="SystemFileSystem.localizingBundle" stringvalue="org.netbeans.modules.defaults.Bundle"/>
             <file name="COPY.shadow">
                 <attr name="originalFile" stringvalue="Actions/Edit/org-openide-actions-CopyAction.instance"/>
@@ -124,11 +126,9 @@ made subject to such option by the copyright holder.
             <file name="S-F12.shadow">
                 <attr name="originalFile" stringvalue="Actions/System/org-netbeans-core-actions-JumpPrevAction.instance"/>
             </file>
-<!--
             <file name="C-G.shadow">
                 <attr name="originalFile" stringvalue="Actions/Edit/org-openide-actions-GotoAction.instance"/>
             </file>
--->
             <file name="S-F2.shadow">
                 <attr name="originalFile" stringvalue="Actions/Edit/bookmark-history-popup-previous.instance"/>
             </file>
@@ -185,10 +185,7 @@ made subject to such option by the copyright holder.
             </file>
             <file name="D-F4.shadow">
         	    <attr name="originalFile" stringvalue="Actions/Window/org-netbeans-core-windows-actions-CloseWindowAction.instance"/>
-            </file>
-            <file name="C-X 0.shadow">
-        	    <attr name="originalFile" stringvalue="Actions/Window/org-netbeans-core-windows-actions-CloseWindowAction.instance"/>
-            </file>
+        	</file>
             <file name="F8.shadow">
                 <attr name="originalFile" stringvalue="Actions/Debug/org-netbeans-modules-debugger-ui-actions-StepOverAction.instance"/>
             </file>
@@ -321,13 +318,8 @@ made subject to such option by the copyright holder.
             <file name="C-X F.shadow">
                 <attr name="originalFile" stringvalue="Actions/Project/org-netbeans-modules-project-ui-NewProject.instance"/>
             </file>
-<!--
             <file name="C-X C-C.shadow">
                 <attr name="originalFile" stringvalue="Actions/System/org-netbeans-core-actions-SystemExit.instance"/>
-            </file>
--->
-            <file name="C-X C-C.shadow">
-                <attr name="originalFile" stringvalue="Actions/Window/org-netbeans-core-windows-actions-CloseAllDocumentsAction.instance"/>
             </file>
             <file name="CS-MINUS.shadow">
                 <attr name="originalFile" stringvalue="Actions/Edit/org-openide-actions-UndoAction.instance"/>
@@ -351,10 +343,10 @@ made subject to such option by the copyright holder.
     </folder>
     <folder name="Editors">
         <folder name="Keybindings">
-            <folder name="MoreEmacs">
+            <folder name="Emacs">
                 <folder name="Defaults">
-                    <file name="org-netbeans-modules-defaults-keybindings.xml" url="actions/MoreEmacs-keybindings.xml"/>
-                    <file name="org-netbeans-modules-editor-keybindings-mac.xml" url="actions/MoreEmacs-keybindings-mac.xml">
+                    <file name="org-netbeans-modules-defaults-keybindings.xml" url="Emacs-keybindings.xml"/>
+                    <file name="org-netbeans-modules-editor-keybindings-mac.xml" url="Emacs-keybindings-mac.xml">
                         <attr name="nbeditor-settings-targetOS" stringvalue="OS_MAC"/>
                     </file>
                 </folder>
