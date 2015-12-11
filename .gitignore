@@ -1,4 +1,3 @@
-nbproject/private/
-core/nbproject/private/
-icu/nbproject/private/
+**/nbproject/private/**
+**/build/**
 build/
