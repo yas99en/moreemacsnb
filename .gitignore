@@ -1,6 +1,4 @@
 nbproject/private/
+core/nbproject/private/
+icu/nbproject/private/
 build/
-nbbuild/
-dist/
-nbdist/
-core/nbproject/private/private.xml
