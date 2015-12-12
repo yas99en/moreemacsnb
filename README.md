@@ -17,4 +17,4 @@
 The following list is key bindings of more emacs plugin.
 
 |function|	binding|	description|
-
+|:-----------|------------:|:------------:|
