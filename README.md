@@ -18,3 +18,9 @@ The following list is key bindings of more emacs plugin.
 
 |function|	binding|	description|
 |:-----------|------------:|:------------:|
+
+
+## Change Log
+
+* 2015/12/12
+  * Prepareing the firs release.
