@@ -14,7 +14,8 @@
 
 ## Key Bindings
 
-* The following list is key bindings of more emacs. It is difference of emacs bindings of NetBeans.
+* The following list is key bindings of more emacs.
+  * It is difference of emacs bindings of NetBeans.
 * 'rebind' means the rebind of NetBeans implementation.
 
 |function|	binding|	description|
