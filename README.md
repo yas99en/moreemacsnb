@@ -42,7 +42,7 @@ The following list is key bindings of more emacs. It is based on the emacs bindi
 |C-o|split-line|rebind|
 |C-t|MoreEmacs transpose-chars||
 |M-t|MoreEmacs transpose-words||
-|C-g|MoreEmacs keyboard-quit|send Escape key down/up events after 500ms|
+|C-g|MoreEmacs keyboard-quit|send Escape key down/up events after 500ms.You should release ctrl key after C-g.|
 |C-x 0|CloseWindowAction|rebind|
 |C-x C-c|CloseAllDocumentsAction|rebind|
 |C-l|adjust-window-center|rebind|
