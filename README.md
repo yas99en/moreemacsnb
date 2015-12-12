@@ -44,9 +44,6 @@ The following list is key bindings of more emacs. It is based on the emacs bindi
 |C-x 0|CloseWindowAction|rebind|
 |C-x C-c|CloseAllDocumentsAction|rebind|
 |C-l|adjust-window-center|rebind|
-[aa]
-
-
 
 
 ## Unicode
