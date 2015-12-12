@@ -19,6 +19,11 @@ The following list is key bindings of more emacs plugin.
 |function|	binding|	description|
 |:-----------|------------:|:------------:|
 
+## Unicode
+
+* The supplementary characters are supported. All characters are treated as code point.
+* East Asian Width is supported. In the column calculation of rectangle operation, the width of ambiguous characters are 2 for CJK languages and 1 for other languages.
+
 
 ## Change Log
 
