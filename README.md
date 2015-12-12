@@ -18,7 +18,31 @@ The following list is key bindings of more emacs. It is based on the emacs bindi
 
 |function|	binding|	description|
 |:-----------|:------------|:------------|
-|C-X 0|CloseWindowAction|rebind|
+|C-x 0|CloseWindowAction|rebind|
+|C-x C-c|CloseAllDocumentsAction|rebind|
+|C-g|MoreEmacs keyboard-quit| not work well|
+|C-l|adjust-window-center|rebind|
+|M-/|completion-show|rebind|
+|C-M-/|all-completion-show|rebind|
+|M-f|||
+|M-b|||
+|M-BS|||
+|M-d|||
+|C-C C-C|||
+|C-w|||
+|M-W|||
+|C-h|delete-previous|rebind|
+|C-j|insert-break|rebind|
+|M-u|||
+|M-l|||
+|C-i|||
+|tab|||
+|C-o|split-line|rebind|
+|C-space|MoreEmacs set-mark|mark current posision|
+
+
+
+
 
 ## Unicode
 
