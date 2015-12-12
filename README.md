@@ -14,10 +14,11 @@
 
 ## Key Bindings
 
-The following list is key bindings of more emacs plugin.
+The following list is key bindings of more emacs. It is based on the emacs bindings of NetBeans.
 
 |function|	binding|	description|
-|:-----------|------------:|:------------:|
+|:-----------|:------------|:------------|
+|C-X 0|CloseWindowAction|rebind|
 
 ## Unicode
 
