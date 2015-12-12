@@ -24,21 +24,26 @@ The following list is key bindings of more emacs. It is based on the emacs bindi
 |C-l|adjust-window-center|rebind|
 |M-/|completion-show|rebind|
 |C-M-/|all-completion-show|rebind|
-|M-f|||
-|M-b|||
-|M-BS|||
-|M-d|||
-|C-C C-C|||
-|C-w|||
-|M-W|||
+|M-f|MoreEmacs forward-word||
+|M-b|MoreEmacs backward-word||
+|M-BS|MoreEmacs backward-kill-word||
+|M-d|MoreEmacs kill-word||
+|C-C C-C|MoreEmacs comment-region|toggles comment|
+|C-w|MoreEmacs kill-region|cut region to clipboard|
+|M-W|MoreEmacs kill-ring-save|copy region to clipboard|
 |C-h|delete-previous|rebind|
 |C-j|insert-break|rebind|
-|M-u|||
-|M-l|||
-|C-i|||
-|tab|||
+|M-u|MoreEmacs capitalize-word||
+|M-l|MoreEmacs downcase-word||
+|C-i|MoreEmacs indent-line||
+|tab|MoreEmacs indent-line||
 |C-o|split-line|rebind|
 |C-space|MoreEmacs set-mark|mark current posision|
+|C-x C-x|exchange-point-and-mark||
+|C-\|delete-horizontal-space||
+|C-x r k|MoreEmacs kill-rectangle||
+|C-x r y|MoreEmacs yank-rectangle||
+|C-M|MoreEmacs new-line||
 
 
 
