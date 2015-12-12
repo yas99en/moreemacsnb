@@ -33,13 +33,13 @@ The following list is key bindings of more emacs. It is based on the emacs bindi
 |C-C C-C|MoreEmacs comment-region|toggles comment|
 |C-i|MoreEmacs indent-line||
 |tab|MoreEmacs indent-line||
-|C-h|delete-previous|rebind|
-|C-j|insert-break|rebind|
-|C-o|split-line|rebind|
 |C-\\|MoreEmacs delete-horizontal-space||
 |C-x r k|MoreEmacs kill-rectangle||
 |C-x r y|MoreEmacs yank-rectangle||
-|C-M|MoreEmacs new-line||
+|C-h|delete-previous|rebind|
+|C-m|MoreEmacs new-line||
+|C-j|insert-break|rebind|
+|C-o|split-line|rebind|
 |C-g|MoreEmacs keyboard-quit| not work well|
 |C-x 0|CloseWindowAction|rebind|
 |C-x C-c|CloseAllDocumentsAction|rebind|
