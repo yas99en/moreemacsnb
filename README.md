@@ -18,32 +18,33 @@ The following list is key bindings of more emacs. It is based on the emacs bindi
 
 |function|	binding|	description|
 |:-----------|:------------|:------------|
-|C-x 0|CloseWindowAction|rebind|
-|C-x C-c|CloseAllDocumentsAction|rebind|
-|C-g|MoreEmacs keyboard-quit| not work well|
-|C-l|adjust-window-center|rebind|
+|C-space|MoreEmacs set-mark|mark current posision|
+|C-x C-x|MoreEmacs exchange-point-and-mark||
+|C-w|MoreEmacs kill-region|cut region to clipboard|
+|M-W|MoreEmacs kill-ring-save|copy region to clipboard|
 |M-/|completion-show|rebind|
 |C-M-/|all-completion-show|rebind|
 |M-f|MoreEmacs forward-word||
 |M-b|MoreEmacs backward-word||
-|M-BS|MoreEmacs backward-kill-word||
 |M-d|MoreEmacs kill-word||
-|C-C C-C|MoreEmacs comment-region|toggles comment|
-|C-w|MoreEmacs kill-region|cut region to clipboard|
-|M-W|MoreEmacs kill-ring-save|copy region to clipboard|
-|C-h|delete-previous|rebind|
-|C-j|insert-break|rebind|
+|M-BS|MoreEmacs backward-kill-word||
 |M-u|MoreEmacs capitalize-word||
 |M-l|MoreEmacs downcase-word||
+|C-C C-C|MoreEmacs comment-region|toggles comment|
 |C-i|MoreEmacs indent-line||
 |tab|MoreEmacs indent-line||
+|C-h|delete-previous|rebind|
+|C-j|insert-break|rebind|
 |C-o|split-line|rebind|
-|C-space|MoreEmacs set-mark|mark current posision|
-|C-x C-x|exchange-point-and-mark||
-|C-\\|delete-horizontal-space||
+|C-\\|MoreEmacs delete-horizontal-space||
 |C-x r k|MoreEmacs kill-rectangle||
 |C-x r y|MoreEmacs yank-rectangle||
 |C-M|MoreEmacs new-line||
+|C-g|MoreEmacs keyboard-quit| not work well|
+|C-x 0|CloseWindowAction|rebind|
+|C-x C-c|CloseAllDocumentsAction|rebind|
+|C-l|adjust-window-center|rebind|
+
 
 
 
