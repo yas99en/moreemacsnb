@@ -21,7 +21,7 @@ The following list is key bindings of more emacs. It is based on the emacs bindi
 |C-space|MoreEmacs set-mark|mark current posision|
 |C-x C-x|MoreEmacs exchange-point-and-mark||
 |C-w|MoreEmacs kill-region|cut region to clipboard|
-|M-W|MoreEmacs kill-ring-save|copy region to clipboard|
+|M-w|MoreEmacs kill-ring-save|copy region to clipboard|
 |M-/|completion-show|rebind|
 |C-M-/|all-completion-show|rebind|
 |M-f|MoreEmacs forward-word||
