@@ -40,7 +40,7 @@ The following list is key bindings of more emacs. It is based on the emacs bindi
 |C-m|MoreEmacs new-line||
 |C-j|insert-break|rebind|
 |C-o|split-line|rebind|
-|C-t|MoreEmacs transpose-chars|The display may get corrupted.|
+|C-t|MoreEmacs transpose-chars|Sorry, the display may get corrupted.|
 |M-t|MoreEmacs transpose-words||
 |C-g|MoreEmacs keyboard-quit|send Escape key down/up events after 500ms.You should release ctrl key after C-g.|
 |C-x 0|CloseWindowAction|rebind|
