@@ -14,7 +14,9 @@
 
 ## Key Bindings
 
-The following list is key bindings of more emacs. It is based on the emacs bindings of NetBeans.
+* The following list is key bindings of more emacs.
+  * It is the difference from emacs bindings of NetBeans.
+* 'rebind' means the rebind of NetBeans implementation.
 
 |function|	binding|	description|
 |:-----------|:------------|:------------|
@@ -40,9 +42,9 @@ The following list is key bindings of more emacs. It is based on the emacs bindi
 |C-m|MoreEmacs new-line||
 |C-j|insert-break|rebind|
 |C-o|split-line|rebind|
-|C-t|MoreEmacs transpose-chars||
+|C-t|MoreEmacs transpose-chars|Sorry, the display may get corrupted.|
 |M-t|MoreEmacs transpose-words||
-|C-g|MoreEmacs keyboard-quit|send Escape key down/up events after 500ms|
+|C-g|MoreEmacs keyboard-quit|send Escape key down/up events after 500ms.You should release ctrl key after C-g.|
 |C-x 0|CloseWindowAction|rebind|
 |C-x C-c|CloseAllDocumentsAction|rebind|
 |C-l|adjust-window-center|rebind|
