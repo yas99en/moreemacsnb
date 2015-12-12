@@ -40,6 +40,8 @@ The following list is key bindings of more emacs. It is based on the emacs bindi
 |C-m|MoreEmacs new-line||
 |C-j|insert-break|rebind|
 |C-o|split-line|rebind|
+|C-t|MoreEmacs transpose-chars||
+|M-t|MoreEmacs transpose-words||
 |C-g|MoreEmacs keyboard-quit| not work well|
 |C-x 0|CloseWindowAction|rebind|
 |C-x C-c|CloseAllDocumentsAction|rebind|
