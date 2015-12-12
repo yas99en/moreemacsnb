@@ -40,7 +40,7 @@ The following list is key bindings of more emacs. It is based on the emacs bindi
 |C-o|split-line|rebind|
 |C-space|MoreEmacs set-mark|mark current posision|
 |C-x C-x|exchange-point-and-mark||
-|C-\|delete-horizontal-space||
+|C-\\|delete-horizontal-space||
 |C-x r k|MoreEmacs kill-rectangle||
 |C-x r y|MoreEmacs yank-rectangle||
 |C-M|MoreEmacs new-line||
