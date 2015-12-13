@@ -32,7 +32,7 @@
 |M-BS|MoreEmacs backward-kill-word||
 |M-u|MoreEmacs capitalize-word||
 |M-l|MoreEmacs downcase-word||
-|C-C C-C|MoreEmacs comment-region|toggles comment|
+|C-c C-c|MoreEmacs comment-region|toggles comment|
 |C-i|MoreEmacs indent-line||
 |tab|MoreEmacs indent-line||
 |C-\\|MoreEmacs delete-horizontal-space||
