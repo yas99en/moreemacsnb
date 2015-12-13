@@ -32,9 +32,6 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
 
-import com.ibm.icu.lang.UCharacter;
-import com.ibm.icu.lang.UProperty;
-
 public final class CharacterUtils {
     private CharacterUtils() {}
 
@@ -49,17 +46,16 @@ public final class CharacterUtils {
         if(locale == null) {
             throw new NullPointerException("locale is null");
         }
-        int value = UCharacter.getIntPropertyValue(codePoint, 
-                UProperty.EAST_ASIAN_WIDTH);
+        int value = EastAsianWidth.getProperty(codePoint);
         switch(value) {
-        case UCharacter.EastAsianWidth.NARROW:
-        case UCharacter.EastAsianWidth.NEUTRAL:
-        case UCharacter.EastAsianWidth.HALFWIDTH:
+        case EastAsianWidth.NARROW:
+        case EastAsianWidth.NEUTRAL:
+        case EastAsianWidth.HALFWIDTH:
             return 1;
-        case UCharacter.EastAsianWidth.FULLWIDTH:
-        case UCharacter.EastAsianWidth.WIDE:
+        case EastAsianWidth.FULLWIDTH:
+        case EastAsianWidth.WIDE:
             return 2;
-        case UCharacter.EastAsianWidth.AMBIGUOUS:
+        case EastAsianWidth.AMBIGUOUS:
             if(EAST_ASIAN_LANGS.contains(locale.getLanguage())) {
                 return 2;
             } else {
