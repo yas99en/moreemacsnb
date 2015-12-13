@@ -9,6 +9,10 @@ The following files are distributed under CDDL.
 - io/github/yas99en/moreemacsnb/core/actions/MoreEmacs-keybindings-mac.xml
 See each files.
 
+The copyright of the following file belongs to Unicode, Inc.
+- io/github/yas99en/moreemacsnb/core/utils/EastAsianWidth.txt
+See http://www.unicode.org/terms_of_use.html
+
 All other files are distributed under BSD-like licence.
 See the following texts.
 
