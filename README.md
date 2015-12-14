@@ -30,7 +30,8 @@
 |M-b|MoreEmacs backward-word||
 |M-d|MoreEmacs kill-word||
 |M-BS|MoreEmacs backward-kill-word||
-|M-u|MoreEmacs capitalize-word||
+|M-c|MoreEmacs capitalize-word||
+|M-u|MoreEmacs upcase-word||
 |M-l|MoreEmacs downcase-word||
 |C-c C-c|MoreEmacs comment-region|toggles comment|
 |C-i|MoreEmacs indent-line||

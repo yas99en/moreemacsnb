@@ -188,7 +188,8 @@ made subject to such option by the copyright holder.
     <bind actionName="io-github-yas99en-moreemacsnb-core-actions-BackwardWordAction" key="C-LEFT"/>
     <bind actionName="io-github-yas99en-moreemacsnb-core-actions-KillWordAction" key="O-D"/>
     <bind actionName="io-github-yas99en-moreemacsnb-core-actions-BackwardKillWordAction" key="O-BACK_SPACE"/>
-    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-CapitalizeWordAction" key="O-U"/>
+    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-CapitalizeWordAction" key="O-C"/>
+    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-UpcaseWordAction" key="O-U"/>
     <bind actionName="io-github-yas99en-moreemacsnb-core-actions-DowncaseWordAction" key="O-L"/>
     <bind actionName="io-github-yas99en-moreemacsnb-core-actions-TransposeCharsAction" key="C-T"/>
     <bind actionName="io-github-yas99en-moreemacsnb-core-actions-TransposeWordsAction" key="O-T"/>
