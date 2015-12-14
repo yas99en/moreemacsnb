@@ -65,8 +65,9 @@ made subject to such option by the copyright holder.
     <bind key="C-W" actionName="io-github-yas99en-moreemacsnb-core-actions-KillRegionAction"/>
 
     <bind key="O-G$G" remove="true"/>
-    <bind key="O-G$O-G" remove="true"/>
     <bind key="M-G$G" actionName="goto"/>
+
+    <bind key="O-G$O-G" remove="true"/>
     <bind key="M-G$M-G" actionName="goto" />
     
     <bind key="O-V" remove="true"/>
@@ -78,10 +79,11 @@ made subject to such option by the copyright holder.
     <bind key="C-P" actionName="caret-up"/>
     
     <bind key="O-B" remove="true"/>
-    <bind key="O-BACK_SPACE" remove="true"/>
     <bind actionName="io-github-yas99en-moreemacsnb-core-actions-BackwardWordAction" key="M-B"/>
-    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-BackwardWordAction" key="M-BACK_SPACE"/>
     <bind actionName="caret-backward" key="C-B"/>
+
+    <bind key="O-BACK_SPACE" remove="true"/>
+    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-BackwardWordAction" key="M-BACK_SPACE"/>
 
     <bind key="O-F" remove="true"/>
     <bind actionName="io-github-yas99en-moreemacsnb-core-actions-ForwardWordAction" key="M-F"/>
@@ -105,6 +107,9 @@ made subject to such option by the copyright holder.
     <bind key="O-L" remove="true"/>
     <bind actionName="io-github-yas99en-moreemacsnb-core-actions-DowncaseWordAction" key="M-L"/>
     <bind actionName="adjust-window-center" key="C-L"/>
+
+    <bind key="O-C" remove="true"/>
+    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-CapitalizeWordAction" key="M-C"/>
 
     <bind key="O-T" remove="true"/>
     <bind actionName="io-github-yas99en-moreemacsnb-core-actions-TransposeWordsAction" key="M-T"/>
