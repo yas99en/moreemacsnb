@@ -33,6 +33,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.Arrays;
+import java.util.stream.Stream;
 
 /**
  *
@@ -70,25 +71,26 @@ public class EastAsianWidth {
     }
 
     private static void loadData() throws IOException {
-        Arrays.stream(WIDE_CHAR_RANGES).forEach(record -> {
-            parseRecord(record, db);
-        });
-
+        parseStream(Arrays.stream(WIDE_CHAR_RANGES), db);
         InputStream in = EastAsianWidth.class.getResourceAsStream("EastAsianWidth.txt");
         try(BufferedReader reader = new BufferedReader(new InputStreamReader(in, "UTF-8"))) {
-            reader.lines().forEach(record -> {
-                parseRecord(record, db);
-            });
+            parseStream(reader.lines(), db);
         }
     }
 
-    private static void parseRecord(String record, byte[] db) {
-        int commentStart = record.indexOf("#");
-        String rawContent = (commentStart == -1) ? record : record.substring(0, commentStart);
-        String content = rawContent.trim();
-        if(content.isEmpty()) {
-            return;
-        }
+    private static void parseStream(Stream<String> stream, byte[] db) {
+        stream.map(record -> {
+            int commentStart = record.indexOf("#");
+            return (commentStart == -1) ? record : record.substring(0, commentStart);
+        })
+        .map(String::trim)
+        .filter(content->!content.isEmpty())
+        .forEach(content -> {
+            parseContent(content, db);
+        });
+    }
+
+    private static void parseContent(String content, byte[] db) {
         String[] splited = content.split(";");
         if(splited.length != 2) {
             return;
@@ -102,12 +104,8 @@ public class EastAsianWidth {
             return;
         }
 
-        String[] range = rangeStr.split("\\.\\.");
-        if(range.length != 2) {
-            return;
-        }
-        int start = Integer.parseInt(range[0], 16);
-        int end   = Integer.parseInt(range[1], 16);
+        int start = Integer.parseInt(rangeStr.substring(0, delimPos), 16);
+        int end   = Integer.parseInt(rangeStr.substring(delimPos+2),  16);
         for(int cp = start; cp <= end; cp++) {
             db[cp] = property;
         }
