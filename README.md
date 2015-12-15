@@ -61,5 +61,8 @@
 
 ## Change Log
 
+* 2015/12/15
+  * changed C-r to find
+  * added M-S-r as in-place-refactoring
 * 2015/12/12
-  * Prepareing the firs release.
+  * Prepareing the first release.
