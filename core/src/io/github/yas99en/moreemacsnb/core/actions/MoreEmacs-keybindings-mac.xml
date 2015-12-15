@@ -93,6 +93,14 @@ made subject to such option by the copyright holder.
     <bind actionName="find-next" key="M-S"/>
     <bind actionName="find" key="C-S"/>    
 
+    <bind key="O-R" remove="true"/>
+    <bind key="D-R" remove="true"/>
+    <bind actionName="find" key="C-R"/>    
+    <bind actionName="find-previous" key="M-R"/>
+
+    <bind key="OS-R" remove="true"/>
+    <bind actionName="in-place-refactoring" key="MS-R"/>
+
     <bind key="O-SLASH" remove="true"/>
     <bind actionName="completion-show" key="M-SLASH"/>
     <bind actionName="undo" key="C-SLASH"/>    

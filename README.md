@@ -43,6 +43,8 @@
 |C-m|MoreEmacs new-line||
 |C-j|insert-break|rebind|
 |C-o|split-line|rebind|
+|C-r|find|rebind|
+|M-S-r|in-place-refactoring|rebind|
 |C-t|MoreEmacs transpose-chars|Sorry, the display may get corrupted.|
 |M-t|MoreEmacs transpose-words||
 |C-g|MoreEmacs keyboard-quit|send Escape key down/up events after 500ms.You should release ctrl key after C-g.|
