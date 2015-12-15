@@ -10,8 +10,7 @@
 ## Install
 
 * JDK 1.8 or higher required.
-* Not ready yet
-* It will be found at NetBeans portal in a few days
+* Not ready yet. It will be found at NetBeans portal in a few days
 
 ## Key Bindings
 
