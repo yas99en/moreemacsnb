@@ -319,11 +319,9 @@ made subject to such option by the copyright holder.
             <file name="C-X F.shadow">
                 <attr name="originalFile" stringvalue="Actions/Project/org-netbeans-modules-project-ui-NewProject.instance"/>
             </file>
-<!--
-            <file name="C-X C-C.shadow">
-                <attr name="originalFile" stringvalue="Actions/System/org-netbeans-core-actions-SystemExit.instance"/>
-            </file>
--->
+            <!--<file name="C-X C-C.shadow">-->
+                <!--<attr name="originalFile" stringvalue="Actions/System/org-netbeans-core-actions-SystemExit.instance"/>-->
+            <!--</file>-->
             <file name="C-X C-C.shadow">
                 <attr name="originalFile" stringvalue="Actions/Window/org-netbeans-core-windows-actions-CloseAllDocumentsAction.instance"/>
             </file>
