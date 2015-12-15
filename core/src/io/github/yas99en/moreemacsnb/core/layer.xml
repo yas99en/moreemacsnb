@@ -184,7 +184,7 @@ made subject to such option by the copyright holder.
             <file name="D-F4.shadow">
         	    <attr name="originalFile" stringvalue="Actions/Window/org-netbeans-core-windows-actions-CloseWindowAction.instance"/>
             </file>
-            <file name="C-X 0.shadow">
+            <file name="C-X 0.shadow"> <!-- rebind -->
         	    <attr name="originalFile" stringvalue="Actions/Window/org-netbeans-core-windows-actions-CloseWindowAction.instance"/>
             </file>
             <file name="F8.shadow">
@@ -322,7 +322,7 @@ made subject to such option by the copyright holder.
             <!--<file name="C-X C-C.shadow">-->
                 <!--<attr name="originalFile" stringvalue="Actions/System/org-netbeans-core-actions-SystemExit.instance"/>-->
             <!--</file>-->
-            <file name="C-X C-C.shadow">
+            <file name="C-X C-C.shadow"> <!-- rebind -->
                 <attr name="originalFile" stringvalue="Actions/Window/org-netbeans-core-windows-actions-CloseAllDocumentsAction.instance"/>
             </file>
             <file name="CS-MINUS.shadow">

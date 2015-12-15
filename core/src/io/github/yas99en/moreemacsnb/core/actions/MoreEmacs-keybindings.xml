@@ -50,9 +50,9 @@ made subject to such option by the copyright holder.
     <bind actionName="abbrev-expand" key="S-SPACE"/>
     <!--<bind actionName="adjust-caret-center" key="C-L"/>-->
     <!--<bind actionName="adjust-window-center" key="C-U$C-L"/>-->
-    <bind actionName="adjust-window-center" key="C-L"/>
+    <bind actionName="adjust-window-center" key="C-L"/> <!-- rebind -->
     <!--<bind actionName="all-completion-show" key="CO-SPACE"/>-->
-    <bind actionName="all-completion-show" key="CO-SLASH"/>
+    <bind actionName="all-completion-show" key="CO-SLASH"/> <!-- rebind -->
     <bind actionName="annotations-cycling" key="CS-C"/>
     <bind actionName="caret-backward" key="C-B"/>
     <bind actionName="caret-backward" key="LEFT"/>
@@ -84,7 +84,7 @@ made subject to such option by the copyright holder.
     <bind actionName="collapse-all-folds" key="CS-SUBTRACT"/>
     <bind actionName="collapse-fold" key="C-SUBTRACT"/>
     <!--<bind actionName="completion-show" key="C-SPACE"/>-->
-    <bind actionName="completion-show" key="O-SLASH"/>
+    <bind actionName="completion-show" key="O-SLASH"/> <!-- rebind -->
     <bind actionName="completion-show" key="C-BACK_SLASH"/>
     <!--<bind actionName="copy-to-clipboard" key="COPY"/>-->
     <!--<bind actionName="copy-to-clipboard" key="O-W"/>-->
@@ -96,7 +96,7 @@ made subject to such option by the copyright holder.
     <bind actionName="delete-next" key="DELETE"/>
     <bind actionName="delete-next" key="C-D"/> 
     <bind actionName="delete-previous" key="BACK_SPACE"/>
-    <bind actionName="delete-previous" key="C-H"/>
+    <bind actionName="delete-previous" key="C-H"/> <!-- rebind -->
     <bind actionName="documentation-show" key="CS-SPACE"/>
     <bind actionName="expand-all-folds" key="CS-ADD"/>
     <bind actionName="expand-all-folds" key="CS-EQUALS"/>
@@ -108,9 +108,9 @@ made subject to such option by the copyright holder.
     <bind actionName="find" key="C-S"/>    
     <bind actionName="find-next" key="O-S"/>
     <bind actionName="find-next" key="F3"/>
-    <bind actionName="find-previous" key="O-R"/>
+    <bind actionName="find-previous" key="O-R"/> <!-- rebind -->
     <!--<bind actionName="find-previous" key="C-R"/>-->
-    <bind actionName="find" key="D-R"/>
+    <bind actionName="find" key="D-R"/> <!-- rebind -->
     <bind actionName="find-previous" key="S-F3"/>
     <bind actionName="fix-imports" key="OS-F"/>
     <bind actionName="format" key="CO-BACK_SLASH"/>
@@ -121,7 +121,7 @@ made subject to such option by the copyright holder.
     <!--<bind actionName="in-place-refactoring" key="D-R"/>-->
     <bind actionName="in-place-refactoring" key="OS-R"/>
     <bind actionName="insert-break" key="ENTER"/>
-    <bind actionName="insert-break" key="C-J"/>
+    <bind actionName="insert-break" key="C-J"/> <!-- rebind -->
     <bind actionName="insert-tab" key="C-Q$TAB"/>
     <!--<bind actionName="make-getter" key="O-U$G"/>-->
     <!--<bind actionName="make-is" key="O-U$I"/>-->
@@ -158,7 +158,7 @@ made subject to such option by the copyright holder.
     <bind actionName="shift-line-left" key="O-0$C-X$TAB"/>
     <bind actionName="shift-line-right" key="C-X$TAB"/>
     <bind actionName="split-line" key="C-ENTER"/>
-    <bind actionName="split-line" key="C-O"/>
+    <bind actionName="split-line" key="C-O"/> <!-- rebind -->
     <bind actionName="start-macro-recording" key="C-X$S-9"/>
     <bind actionName="start-new-line" key="S-ENTER"/>
     <bind actionName="stop-macro-recording" key="C-X$S-0"/>
