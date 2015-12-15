@@ -51,7 +51,7 @@ made subject to such option by the copyright holder.
     <!--<bind actionName="adjust-caret-center" key="C-L"/>-->
     <!--<bind actionName="adjust-window-center" key="C-U$C-L"/>-->
     <bind actionName="adjust-window-center" key="C-L"/>
-<!--    <bind actionName="all-completion-show" key="CO-SPACE"/>-->
+    <!--<bind actionName="all-completion-show" key="CO-SPACE"/>-->
     <bind actionName="all-completion-show" key="CO-SLASH"/>
     <bind actionName="annotations-cycling" key="CS-C"/>
     <bind actionName="caret-backward" key="C-B"/>
