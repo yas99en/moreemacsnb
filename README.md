@@ -20,7 +20,7 @@
 
 ### Editor Bindngs
 
-* [The complete editor bindings definition.](https://github.com/yas99en/moreemacsnb/blob/master/core/src/io/github/yas99en/moreemacsnb/core/actions/MoreEmacs-keybindings.xml)
+* [The complete editor bindings definition of MoreEmacs.](https://github.com/yas99en/moreemacsnb/blob/master/core/src/io/github/yas99en/moreemacsnb/core/actions/MoreEmacs-keybindings.xml)
 
 |function|	binding|	description|
 |:-----------|:------------|:------------|
@@ -56,7 +56,7 @@
 
 ### Menu Bindngs
 
-* [The complete menu bindings definition.](https://github.com/yas99en/moreemacsnb/blob/master/core/src/io/github/yas99en/moreemacsnb/core/layer.xml)
+* [The complete menu bindings definition of MoreEmacs.](https://github.com/yas99en/moreemacsnb/blob/master/core/src/io/github/yas99en/moreemacsnb/core/layer.xml)
 
 |function|	binding|	description|
 |:-----------|:------------|:------------|
