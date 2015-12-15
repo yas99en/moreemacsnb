@@ -50,10 +50,14 @@
 |C-t|MoreEmacs transpose-chars|Sorry, the display may get corrupted.|
 |M-t|MoreEmacs transpose-words||
 |C-g|MoreEmacs keyboard-quit|send Escape key down/up events after 500ms.You should release ctrl key after C-g.|
-|C-x 0|CloseWindowAction|rebind|
-|C-x C-c|CloseAllDocumentsAction|rebind|
 |C-l|adjust-window-center|rebind|
 
+### Menu Bindngs
+
+|function|	binding|	description|
+|:-----------|:------------|:------------|
+|C-x 0|CloseWindowAction|rebind|
+|C-x C-c|CloseAllDocumentsAction|rebind|
 
 ## Unicode
 
