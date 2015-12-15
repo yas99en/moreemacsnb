@@ -10,7 +10,7 @@
 ## Install
 
 * Not ready yet
-* 
+* It will be found NetBeans portal in a few days
 
 ## Key Bindings
 
