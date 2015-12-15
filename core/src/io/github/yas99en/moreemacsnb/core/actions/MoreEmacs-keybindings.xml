@@ -108,7 +108,7 @@ made subject to such option by the copyright holder.
     <bind actionName="find" key="C-S"/>    
     <bind actionName="find-next" key="O-S"/>
     <bind actionName="find-next" key="F3"/>
-    <bind actionName="find-previous" key="O-R"/> <!-- rebind -->
+    <bind actionName="find-previous" key="O-R"/>
     <!--<bind actionName="find-previous" key="C-R"/>-->
     <bind actionName="find" key="D-R"/> <!-- rebind -->
     <bind actionName="find-previous" key="S-F3"/>
@@ -119,7 +119,7 @@ made subject to such option by the copyright holder.
     <bind actionName="goto-declaration" key="O-PERIOD"/>
     <bind actionName="goto-declaration" key="CO-G"/>
     <!--<bind actionName="in-place-refactoring" key="D-R"/>-->
-    <bind actionName="in-place-refactoring" key="OS-R"/>
+    <bind actionName="in-place-refactoring" key="OS-R"/> <!-- rebind -->
     <bind actionName="insert-break" key="ENTER"/>
     <bind actionName="insert-break" key="C-J"/> <!-- rebind -->
     <bind actionName="insert-tab" key="C-Q$TAB"/>
