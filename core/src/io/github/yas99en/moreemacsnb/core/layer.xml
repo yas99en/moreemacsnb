@@ -48,7 +48,7 @@ made subject to such option by the copyright holder.
 <filesystem>
     <folder name="Keymaps">
         <folder name="MoreEmacs">
-            <attr name="SystemFileSystem.localizingBundle" stringvalue="org.netbeans.modules.defaults.Bundle"/>
+            <attr name="SystemFileSystem.localizingBundle" stringvalue="io.github.yas99en.moreemacsnb.Bundle"/>
             <file name="COPY.shadow">
                 <attr name="originalFile" stringvalue="Actions/Edit/org-openide-actions-CopyAction.instance"/>
             </file>
