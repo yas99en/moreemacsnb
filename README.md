@@ -17,6 +17,7 @@
 * The following list is key bindings of more emacs.
   * It is the difference from emacs bindings of NetBeans.
 * 'rebind' means the rebind of NetBeans implementation.
+* [The complete bindings definition](https://github.com/yas99en/moreemacsnb/blob/master/core/src/io/github/yas99en/moreemacsnb/core/actions/MoreEmacs-keybindings.xml)
 
 ### Editor Bindngs
 
@@ -54,7 +55,7 @@
 
 ### Menu Bindngs
 
-* [the complete bindings](https://github.com/yas99en/moreemacsnb/blob/master/core/src/io/github/yas99en/moreemacsnb/core/layer.xml)
+* [The complete bindings definition](https://github.com/yas99en/moreemacsnb/blob/master/core/src/io/github/yas99en/moreemacsnb/core/layer.xml)
 
 |function|	binding|	description|
 |:-----------|:------------|:------------|
