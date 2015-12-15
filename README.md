@@ -36,7 +36,7 @@
 |C-c C-c|MoreEmacs comment-region|toggles comment|
 |C-i|MoreEmacs indent-line||
 |tab|MoreEmacs indent-line||
-|C-\\|MoreEmacs delete-horizontal-space||
+|M-\\|MoreEmacs delete-horizontal-space||
 |C-x r k|MoreEmacs kill-rectangle||
 |C-x r y|MoreEmacs yank-rectangle||
 |C-h|delete-previous|rebind|
