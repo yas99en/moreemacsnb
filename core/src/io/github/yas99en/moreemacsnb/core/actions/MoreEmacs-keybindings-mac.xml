@@ -47,7 +47,7 @@ made subject to such option by the copyright holder.
 <!DOCTYPE bindings PUBLIC "-//NetBeans//DTD Editor KeyBindings settings 1.1//EN" "http://www.netbeans.org/dtds/EditorKeyBindings-1_1.dtd">
 
 <!--
-    IMPORTANT:  This file modifies keybindings from Emacs-keybindings.xml to make them work on Mac OS.
+    IMPORTANT:  This file modifies keybindings from MoreEmacs-keybindings.xml to make them work on Mac OS.
 -->
 
 <bindings>
