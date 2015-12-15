@@ -18,6 +18,8 @@
   * It is the difference from emacs bindings of NetBeans.
 * 'rebind' means the rebind of NetBeans implementation.
 
+### Editor Bindngs
+
 |function|	binding|	description|
 |:-----------|:------------|:------------|
 |C-space|MoreEmacs set-mark|mark current posision|
