@@ -18,7 +18,7 @@
   * It is the difference from emacs bindings of NetBeans.
 * 'rebind' means the rebind of NetBeans implementation.
 
-### Editor Bindngs
+### Editor Bindings
 
 * [The complete editor bindings definition of MoreEmacs.](https://github.com/yas99en/moreemacsnb/blob/master/core/src/io/github/yas99en/moreemacsnb/core/actions/MoreEmacs-keybindings.xml)
     * [modifier symbols](http://bits.netbeans.org/8.0/javadoc/org-openide-util/org/openide/util/Utilities.html#stringToKey(java.lang.String))
@@ -55,7 +55,7 @@
 |C-g|MoreEmacs keyboard-quit|send Escape key down/up events after 500ms.You should release ctrl key after C-g.|
 |C-l|adjust-window-center|rebind|
 
-### Menu Bindngs
+### Menu Bindings
 
 * [The complete menu bindings definition of MoreEmacs.](https://github.com/yas99en/moreemacsnb/blob/master/core/src/io/github/yas99en/moreemacsnb/core/layer.xml)
     * [modifier symbols](http://bits.netbeans.org/8.0/javadoc/org-openide-util/org/openide/util/Utilities.html#stringToKey(java.lang.String))
