@@ -57,7 +57,7 @@
 |function|	binding|	description|
 |:-----------|:------------|:------------|
 |C-x 0|CloseWindowAction|rebind|
-|C-x C-c|CloseAllDocumentsAction|rebind|
+|C-x C-c|CloseAllDocumentsAction|rebind. Sorry this is my preference.|
 
 ## Unicode
 
