@@ -54,6 +54,8 @@
 
 ### Menu Bindngs
 
+* [the complete bindings](https://github.com/yas99en/moreemacsnb/blob/master/core/src/io/github/yas99en/moreemacsnb/core/layer.xml)
+
 |function|	binding|	description|
 |:-----------|:------------|:------------|
 |C-x 0|CloseWindowAction|rebind|
