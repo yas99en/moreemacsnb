@@ -58,44 +58,62 @@ made subject to such option by the copyright holder.
     
     <bind key="O-D" remove="true"/>
     <bind key="M-D" actionName="io-github-yas99en-moreemacsnb-core-actions-KillWordAction"/>
+    <bind key="C-D" actionName="delete-next"/>
     
     <bind key="O-W" remove="true"/>
     <bind key="M-W" actionName="io-github-yas99en-moreemacsnb-core-actions-KillRingSaveAction"/>
+    <bind key="C-W" actionName="io-github-yas99en-moreemacsnb-core-actions-KillRegionAction"/>
 
     <bind key="O-G$G" remove="true"/>
-    <bind key="O-G$O-G" remove="true"/>
     <bind key="M-G$G" actionName="goto"/>
+
+    <bind key="O-G$O-G" remove="true"/>
     <bind key="M-G$M-G" actionName="goto" />
     
     <bind key="O-V" remove="true"/>
     <bind key="M-V" actionName="page-up"/>
+    <bind key="C-V" actionName="page-down"/>
     
     <bind key="O-P" remove="true"/>
-    <bind actionName="tooltip-show" key="M-P"/>
+    <bind key="M-P" actionName="tooltip-show"/>
+    <bind key="C-P" actionName="caret-up"/>
     
     <bind key="O-B" remove="true"/>
-    <bind key="O-BACK_SPACE" remove="true"/>
     <bind actionName="io-github-yas99en-moreemacsnb-core-actions-BackwardWordAction" key="M-B"/>
+    <bind actionName="caret-backward" key="C-B"/>
+
+    <bind key="O-BACK_SPACE" remove="true"/>
     <bind actionName="io-github-yas99en-moreemacsnb-core-actions-BackwardWordAction" key="M-BACK_SPACE"/>
 
     <bind key="O-F" remove="true"/>
     <bind actionName="io-github-yas99en-moreemacsnb-core-actions-ForwardWordAction" key="M-F"/>
+    <bind actionName="caret-forward" key="C-F"/>
 
     <bind key="O-S" remove="true"/>
     <bind actionName="find-next" key="M-S"/>
+    <bind actionName="find" key="C-S"/>    
 
     <bind key="O-SLASH" remove="true"/>
     <bind actionName="completion-show" key="M-SLASH"/>
+    <bind actionName="undo" key="C-SLASH"/>    
 
     <bind key="O-BACK_SLASH" remove="true"/>
     <bind actionName="io-github-yas99en-moreemacsnb-core-actions-DeleteHorizontalSpaceAction" key="M-BACK_SLASH"/>
+    <bind actionName="completion-show" key="C-BACK_SLASH"/>
 
     <bind key="O-U" remove="true"/>
     <bind actionName="io-github-yas99en-moreemacsnb-core-actions-CapitalizeWordAction" key="M-U"/>
+
     <bind key="O-L" remove="true"/>
     <bind actionName="io-github-yas99en-moreemacsnb-core-actions-DowncaseWordAction" key="M-L"/>
+    <bind actionName="adjust-window-center" key="C-L"/>
+
+    <bind key="O-C" remove="true"/>
+    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-CapitalizeWordAction" key="M-C"/>
+
     <bind key="O-T" remove="true"/>
     <bind actionName="io-github-yas99en-moreemacsnb-core-actions-TransposeWordsAction" key="M-T"/>
+    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-TransposeCharsAction" key="C-T"/>
 
     <bind key="CO-SLASH" remove="true"/>
     <bind actionName="all-completion-show" key="CM-SLASH"/>
@@ -135,10 +153,6 @@ made subject to such option by the copyright holder.
     <bind actionName="uncomment" key="M-0$C-C$C-C"/>
 
     <!-- Things we add only on the mac -->
-    <bind key="C-P" actionName="caret-up"/>
-    <bind key="C-W" actionName="io-github-yas99en-moreemacsnb-core-actions-KillRegionAction"/>
-    <bind key="C-D" actionName="delete-next"/>
-    <bind key="C-V" actionName="page-down"/>
     <bind key="M-UP" actionName="page-up"/> <!-- macbook support -->
     <bind key="M-DOWN" actionName="page-down"/> <!-- macbook support -->
     
