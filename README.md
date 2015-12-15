@@ -10,16 +10,18 @@
 ## Install
 
 * Not ready yet
-* 
+* It will be found at NetBeans portal in a few days
 
 ## Key Bindings
 
 * The following list is key bindings of more emacs.
   * It is the difference from emacs bindings of NetBeans.
 * 'rebind' means the rebind of NetBeans implementation.
-* [The complete bindings definition](https://github.com/yas99en/moreemacsnb/blob/master/core/src/io/github/yas99en/moreemacsnb/core/actions/MoreEmacs-keybindings.xml)
 
 ### Editor Bindngs
+
+* [The complete editor bindings definition of MoreEmacs.](https://github.com/yas99en/moreemacsnb/blob/master/core/src/io/github/yas99en/moreemacsnb/core/actions/MoreEmacs-keybindings.xml)
+    * [modifier symbols](http://bits.netbeans.org/8.0/javadoc/org-openide-util/org/openide/util/Utilities.html#stringToKey(java.lang.String))
 
 |function|	binding|	description|
 |:-----------|:------------|:------------|
@@ -55,7 +57,8 @@
 
 ### Menu Bindngs
 
-* [The complete bindings definition](https://github.com/yas99en/moreemacsnb/blob/master/core/src/io/github/yas99en/moreemacsnb/core/layer.xml)
+* [The complete menu bindings definition of MoreEmacs.](https://github.com/yas99en/moreemacsnb/blob/master/core/src/io/github/yas99en/moreemacsnb/core/layer.xml)
+    * [modifier symbols](http://bits.netbeans.org/8.0/javadoc/org-openide-util/org/openide/util/Utilities.html#stringToKey(java.lang.String))
 
 |function|	binding|	description|
 |:-----------|:------------|:------------|
