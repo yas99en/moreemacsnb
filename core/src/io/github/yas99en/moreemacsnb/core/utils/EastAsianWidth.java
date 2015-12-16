@@ -33,6 +33,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.Arrays;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 /**
@@ -91,12 +92,12 @@ public class EastAsianWidth {
     }
 
     private static void parseContent(String content, byte[] db) {
-        String[] splited = content.split(";");
-        if(splited.length != 2) {
+        int semiColon = content.indexOf(";");
+        if(semiColon == -1) {
             return;
         }
-        String rangeStr = splited[0];
-        byte property = property2Byte(splited[1]);
+        String rangeStr = content.substring(0, semiColon);
+        byte property = property2Byte(content.substring(semiColon+1));
         int delimPos = rangeStr.indexOf("..");
         if(delimPos == -1) {
             int cp = Integer.parseInt(rangeStr, 16);
@@ -106,9 +107,7 @@ public class EastAsianWidth {
 
         int start = Integer.parseInt(rangeStr.substring(0, delimPos), 16);
         int end   = Integer.parseInt(rangeStr.substring(delimPos+2),  16);
-        for(int cp = start; cp <= end; cp++) {
-            db[cp] = property;
-        }
+        IntStream.rangeClosed(start, end).forEach(cp -> {db[cp] = property;});
     }
 
     private static byte property2Byte(String property) {
