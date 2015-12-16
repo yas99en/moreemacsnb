@@ -11,7 +11,8 @@
 
 * JDK 1.8 or higher required.
 * Not ready yet. It will be found at NetBeans portal in a few days
-* <img src="moreemacsnb.png" width="300">
+* open Tool/Option, and open Keymap tab.
+<img src="moreemacsnb.png" width="300">
 
 ## Key Bindings
 
