@@ -78,3 +78,8 @@
   * added M-S-r as in-place-refactoring
 * 2015/12/12
   * Prepareing the first release.
+
+## Links
+
+* [NetBeans Plugin Portal](http://plugins.netbeans.org/)
+
