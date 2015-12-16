@@ -11,8 +11,7 @@
 
 * JDK 1.8 or higher required.
 * Not ready yet. It will be found at NetBeans portal in a few days
-* ![keymap](moreemacsnb.png)
-* <img src="moreemacsnb.png" width="100">
+* <img src="moreemacsnb.png" width="200">
 
 ## Key Bindings
 
