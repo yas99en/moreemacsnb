@@ -56,7 +56,7 @@
 |M-S-r|in-place-refactoring|rebind|
 |C-t|MoreEmacs transpose-chars|Sorry, the display may get corrupted.|
 |M-t|MoreEmacs transpose-words||
-|C-g|MoreEmacs keyboard-quit|dispatch Escape key down/up events.|
+|C-g|MoreEmacs keyboard-quit|dispatch escape key down/up events.|
 |C-l|adjust-window-center|rebind|
 
 ### Menu Bindings
