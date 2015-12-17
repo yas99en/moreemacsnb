@@ -49,13 +49,12 @@ public class KeyboardQuitAction extends MoreEmacsAction {
 
     @Override
     public void actionPerformed(ActionEvent e, JTextComponent target) {
-        System.out.println("KeyboardQuitAction.actionPerformed()");
         EventQueue queue = java.awt.Toolkit.getDefaultToolkit().getSystemEventQueue();
         queue.postEvent(escapeKeyEvent(target, KEY_PRESSED));
         queue.postEvent(escapeKeyEvent(target, KEY_RELEASED));
     }
     
-    private KeyEvent escapeKeyEvent(Component source, int id) {
+    private static KeyEvent escapeKeyEvent(Component source, int id) {
         return new KeyEvent(source, 
                 id, 
                 System.currentTimeMillis(),
