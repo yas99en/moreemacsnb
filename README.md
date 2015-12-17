@@ -77,7 +77,7 @@
 |M-s|find-next|nb emacs|
 |M-r|find-previous|nb emacs|
 |MS-5|replace|nb emacs|
-|C-g|MoreEmacs keyboard-quit|dispatch escape key down/up events.|
+|C-g|MoreEmacs keyboard-quit|dispatch escape key down/up events internally.|
 |C-t|MoreEmacs transpose-chars|Sorry, the display may get corrupted.|
 |M-t|MoreEmacs transpose-words||
 |MS-f|fix-imports|nb emacs|
