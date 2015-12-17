@@ -83,7 +83,6 @@ public class IndentLineAction extends MoreEmacsAction {
         Element line = rootElem.getElement(row);
         
         int length = line.getEndOffset() - line.getStartOffset() - 1;
-        System.out.println("length:" +length);
         DocumentCharSequence seq = new DocumentCharSequence(doc, line.getStartOffset(), length);
         CodePointIterator itr = new CodePointIterator(seq);
         for(; itr.hasNext(); ) {

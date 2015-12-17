@@ -49,8 +49,6 @@ public class ToggleCommentRegionAction extends MoreEmacsAction {
 
     @Override
     public void actionPerformed(ActionEvent e, JTextComponent target) {
-        System.out.println("CommentRegionAction.actionPerformed()");
-
         if (!target.isEditable() || !target.isEnabled()) {
             target.getToolkit().beep();
             return;
