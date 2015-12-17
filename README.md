@@ -74,12 +74,12 @@
 |M-s|find-next|nb emacs|
 |M-r|find-previous|nb emacs|
 |MS-5|replace|nb emacs|
-|MS-f|fix-imports|nb emacs|
-|M-S-r|in-place-refactoring|rebind|
 |C-t|MoreEmacs transpose-chars|Sorry, the display may get corrupted.|
 |M-t|MoreEmacs transpose-words||
 |C-g|MoreEmacs keyboard-quit|dispatch escape key down/up events.|
 |C-l|adjust-window-center|rebind|
+|MS-f|fix-imports|nb emacs|
+|M-S-r|in-place-refactoring|rebind|
 
 ### Menu Bindings
 
