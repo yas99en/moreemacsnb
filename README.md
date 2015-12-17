@@ -62,6 +62,7 @@
 |C-c C-c|MoreEmacs toggle-comment-region|toggles comment|
 |C-i|MoreEmacs indent-line||
 |tab|MoreEmacs indent-line||
+|C-q TAB|insert-tab|nb emacs|
 |M-\\|MoreEmacs delete-horizontal-space||
 |C-x r k|MoreEmacs kill-rectangle||
 |C-x r y|MoreEmacs yank-rectangle||
@@ -79,7 +80,6 @@
 |M-t|MoreEmacs transpose-words||
 |C-g|MoreEmacs keyboard-quit|dispatch escape key down/up events.|
 |C-l|adjust-window-center|rebind|
-|C-q TAB|insert-tab|nb emacs|
 
 ### Menu Bindings
 
