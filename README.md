@@ -47,21 +47,23 @@
 |C-e|caret-begin|nb emacs|
 |C-p|caret-up|nb emacs|
 |C-n|caret-down|nb emacs|
+|C-v|page-down|nb emacs|
+|M-v|page-up|nb emacs|
+|C-l|adjust-window-center|rebind|
 |C-k|cut-to-line-end|nb emacs|
 |C-d|delete-next|nb emacs|
 |C-h|delete-previous|rebind|
+|BS|delete-previous|rebind|
 |M-f|MoreEmacs forward-word||
 |M-b|MoreEmacs backward-word||
 |M-d|MoreEmacs kill-word||
 |M-BS|MoreEmacs backward-kill-word||
-|C-v|page-down|nb emacs|
-|M-v|page-up|nb emacs|
 |M-c|MoreEmacs capitalize-word||
 |M-u|MoreEmacs upcase-word||
 |M-l|MoreEmacs downcase-word||
 |C-c C-c|MoreEmacs toggle-comment-region|toggles comment|
 |C-i|MoreEmacs indent-line||
-|tab|MoreEmacs indent-line||
+|TAB|MoreEmacs indent-line||
 |C-q TAB|insert-tab|nb emacs|
 |M-\\|MoreEmacs delete-horizontal-space||
 |C-x r k|MoreEmacs kill-rectangle||
@@ -74,10 +76,9 @@
 |M-s|find-next|nb emacs|
 |M-r|find-previous|nb emacs|
 |MS-5|replace|nb emacs|
+|C-g|MoreEmacs keyboard-quit|dispatch escape key down/up events.|
 |C-t|MoreEmacs transpose-chars|Sorry, the display may get corrupted.|
 |M-t|MoreEmacs transpose-words||
-|C-g|MoreEmacs keyboard-quit|dispatch escape key down/up events.|
-|C-l|adjust-window-center|rebind|
 |MS-f|fix-imports|nb emacs|
 |M-S-r|in-place-refactoring|rebind|
 
