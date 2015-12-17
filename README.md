@@ -66,11 +66,11 @@
 |C-i|MoreEmacs indent-line||
 |TAB|MoreEmacs indent-line||
 |C-q TAB|insert-tab|nb emacs|
+|C-j|insert-break|rebind|
+|C-m|MoreEmacs new-line||
+|C-o|split-line|rebind|
 |C-x r k|MoreEmacs kill-rectangle||
 |C-x r y|MoreEmacs yank-rectangle||
-|C-m|MoreEmacs new-line||
-|C-j|insert-break|rebind|
-|C-o|split-line|rebind|
 |C-s|find|nb emacs|
 |C-r|find|rebind|
 |M-s|find-next|nb emacs|
