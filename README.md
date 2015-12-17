@@ -21,6 +21,7 @@
 * The following list is key bindings of more emacs.
   * It is the difference from emacs bindings of NetBeans.
 * 'rebind' means the rebind of NetBeans implementation.
+* 'nb emacs' means the binding of NetBeans Emacs bidings.
 
 ### Editor Bindings
 
@@ -33,12 +34,28 @@
 |C-x C-x|MoreEmacs exchange-point-and-mark||
 |C-w|MoreEmacs kill-region|cut region to clipboard|
 |M-w|MoreEmacs kill-ring-save|copy region to clipboard|
+|C-y|paste-from-clipboard|nb emacs|
+|C-x u|undo|nb emacs|
+|C-/|undo|nb emacs|
 |M-/|completion-show|rebind|
 |C-M-/|all-completion-show|rebind|
+|C-f|caret-forward|nb emacs|
+|C-b|caret-backwar|nb emacs|
+|MS-,|caret-begin|nb emacs|
+|MS-.|caret-begin|nb emacs|
+|C-a|caret-line-first-column|nb emacs|
+|C-e|caret-begin|nb emacs|
+|C-p|caret-up|nb emacs|
+|C-n|caret-down|nb emacs|
+|C-k|cut-to-line-end|nb emacs|
+|C-d|delete-next|nb emacs|
+|C-h|delete-previous|rebind|
 |M-f|MoreEmacs forward-word||
 |M-b|MoreEmacs backward-word||
 |M-d|MoreEmacs kill-word||
 |M-BS|MoreEmacs backward-kill-word||
+|C-v|page-down|nb emacs|
+|M-v|page-up|nb emacs|
 |M-c|MoreEmacs capitalize-word||
 |M-u|MoreEmacs upcase-word||
 |M-l|MoreEmacs downcase-word||
@@ -48,16 +65,21 @@
 |M-\\|MoreEmacs delete-horizontal-space||
 |C-x r k|MoreEmacs kill-rectangle||
 |C-x r y|MoreEmacs yank-rectangle||
-|C-h|delete-previous|rebind|
 |C-m|MoreEmacs new-line||
 |C-j|insert-break|rebind|
 |C-o|split-line|rebind|
+|C-s|find|nb emacs|
 |C-r|find|rebind|
+|M-s|find-next|nb emacs|
+|M-r|find-previous|nb emacs|
+|MS-5|replace|nb emacs|
+|MS-f|fix-imports|nb emacs|
 |M-S-r|in-place-refactoring|rebind|
 |C-t|MoreEmacs transpose-chars|Sorry, the display may get corrupted.|
 |M-t|MoreEmacs transpose-words||
 |C-g|MoreEmacs keyboard-quit|dispatch escape key down/up events.|
 |C-l|adjust-window-center|rebind|
+|C-q TAB|insert-tab|nb emacs|
 
 ### Menu Bindings
 
