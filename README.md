@@ -11,6 +11,10 @@
 
 * JDK 1.8 or higher required.
 * Not ready yet. It will be found at NetBeans portal in a few days
+* open Tools/Options dialog, and open Keymap tab.
+* select "MoreEmacs".
+
+<img src="moreemacsnb.png" width="300">
 
 ## Key Bindings
 
