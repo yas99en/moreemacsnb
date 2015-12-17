@@ -41,10 +41,10 @@ import static org.netbeans.editor.ext.ExtKit.toggleCommentAction;
  *
  * @author Yasuhiro Endoh
  */
-@EditorActionRegistration(name="io-github-yas99en-moreemacsnb-core-actions-CommentRegionAction")
-public class CommentRegionAction extends MoreEmacsAction {
-    public CommentRegionAction() {
-        super("comment-region");
+@EditorActionRegistration(name="io-github-yas99en-moreemacsnb-core-actions-ToggleCommentRegionAction")
+public class ToggleCommentRegionAction extends MoreEmacsAction {
+    public ToggleCommentRegionAction() {
+        super("toggle-comment-region");
     }
 
     @Override

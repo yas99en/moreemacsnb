@@ -38,7 +38,7 @@
 |M-c|MoreEmacs capitalize-word||
 |M-u|MoreEmacs upcase-word||
 |M-l|MoreEmacs downcase-word||
-|C-c C-c|MoreEmacs comment-region|toggles comment|
+|C-c C-c|MoreEmacs toggle-comment-region|toggles comment|
 |C-i|MoreEmacs indent-line||
 |tab|MoreEmacs indent-line||
 |M-\\|MoreEmacs delete-horizontal-space||
