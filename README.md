@@ -54,6 +54,7 @@
 |C-d|delete-next|nb emacs|
 |C-h|delete-previous|rebind|
 |BS|delete-previous|rebind|
+|M-\\|MoreEmacs delete-horizontal-space||
 |M-f|MoreEmacs forward-word||
 |M-b|MoreEmacs backward-word||
 |M-d|MoreEmacs kill-word||
@@ -65,7 +66,6 @@
 |C-i|MoreEmacs indent-line||
 |TAB|MoreEmacs indent-line||
 |C-q TAB|insert-tab|nb emacs|
-|M-\\|MoreEmacs delete-horizontal-space||
 |C-x r k|MoreEmacs kill-rectangle||
 |C-x r y|MoreEmacs yank-rectangle||
 |C-m|MoreEmacs new-line||
