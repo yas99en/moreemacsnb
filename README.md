@@ -40,7 +40,7 @@
 |M-/|completion-show|rebind|
 |C-M-/|all-completion-show|rebind|
 |C-f|caret-forward|nb emacs|
-|C-b|caret-backwar|nb emacs|
+|C-b|caret-backward|nb emacs|
 |MS-,|caret-begin|nb emacs|
 |MS-.|caret-begin|nb emacs|
 |C-a|caret-line-first-column|nb emacs|
