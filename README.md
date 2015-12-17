@@ -52,6 +52,7 @@
 |C-l|adjust-window-center|rebind|
 |C-k|cut-to-line-end|nb emacs|
 |C-d|delete-next|nb emacs|
+|DEL|delete-next|nb emacs|
 |C-h|delete-previous|rebind|
 |BS|delete-previous|rebind|
 |M-\\|MoreEmacs delete-horizontal-space||
