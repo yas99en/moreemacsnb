@@ -55,113 +55,153 @@ made subject to such option by the copyright holder.
     <!-- Things we add that replace standard keybindings -->
     <bind key="CO-G" remove="true"/>
     <bind key="CM-G" actionName="goto-declaration"/>
+    <bind key="CA-G" actionName="goto-declaration"/>
     
     <bind key="O-D" remove="true"/>
     <bind key="M-D" actionName="io-github-yas99en-moreemacsnb-core-actions-KillWordAction"/>
+    <bind key="A-D" actionName="io-github-yas99en-moreemacsnb-core-actions-KillWordAction"/>
     <bind key="C-D" actionName="delete-next"/>
     
     <bind key="O-W" remove="true"/>
     <bind key="M-W" actionName="io-github-yas99en-moreemacsnb-core-actions-KillRingSaveAction"/>
+    <bind key="A-W" actionName="io-github-yas99en-moreemacsnb-core-actions-KillRingSaveAction"/>
     <bind key="C-W" actionName="io-github-yas99en-moreemacsnb-core-actions-KillRegionAction"/>
 
     <bind key="O-G$G" remove="true"/>
     <bind key="M-G$G" actionName="goto"/>
+    <bind key="A-G$G" actionName="goto"/>
 
     <bind key="O-G$O-G" remove="true"/>
     <bind key="M-G$M-G" actionName="goto" />
+    <bind key="A-G$A-G" actionName="goto" />
     
     <bind key="O-V" remove="true"/>
     <bind key="M-V" actionName="page-up"/>
+    <bind key="A-V" actionName="page-up"/>
     <bind key="C-V" actionName="page-down"/>
     
     <bind key="O-P" remove="true"/>
     <bind key="M-P" actionName="tooltip-show"/>
+    <bind key="A-P" actionName="tooltip-show"/>
     <bind key="C-P" actionName="caret-up"/>
     
     <bind key="O-B" remove="true"/>
     <bind actionName="io-github-yas99en-moreemacsnb-core-actions-BackwardWordAction" key="M-B"/>
+    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-BackwardWordAction" key="A-B"/>
     <bind actionName="caret-backward" key="C-B"/>
 
     <bind key="O-BACK_SPACE" remove="true"/>
     <bind actionName="io-github-yas99en-moreemacsnb-core-actions-BackwardWordAction" key="M-BACK_SPACE"/>
+    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-BackwardWordAction" key="A-BACK_SPACE"/>
 
     <bind key="O-F" remove="true"/>
     <bind actionName="io-github-yas99en-moreemacsnb-core-actions-ForwardWordAction" key="M-F"/>
+    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-ForwardWordAction" key="A-F"/>
     <bind actionName="caret-forward" key="C-F"/>
 
     <bind key="O-S" remove="true"/>
     <bind actionName="find-next" key="M-S"/>
+    <bind actionName="find-next" key="A-S"/>
     <bind actionName="find" key="C-S"/>    
 
     <bind key="O-R" remove="true"/>
     <bind key="D-R" remove="true"/>
     <bind actionName="find" key="C-R"/>    
     <bind actionName="find-previous" key="M-R"/>
+    <bind actionName="find-previous" key="A-R"/>
 
     <bind key="OS-R" remove="true"/>
     <bind actionName="in-place-refactoring" key="MS-R"/>
+    <bind actionName="in-place-refactoring" key="AS-R"/>
 
     <bind key="O-SLASH" remove="true"/>
     <bind actionName="completion-show" key="M-SLASH"/>
+    <bind actionName="completion-show" key="A-SLASH"/>
     <bind actionName="undo" key="C-SLASH"/>    
 
     <bind key="O-BACK_SLASH" remove="true"/>
     <bind actionName="io-github-yas99en-moreemacsnb-core-actions-DeleteHorizontalSpaceAction" key="M-BACK_SLASH"/>
+    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-DeleteHorizontalSpaceAction" key="A-BACK_SLASH"/>
     <bind actionName="completion-show" key="C-BACK_SLASH"/>
 
     <bind key="O-U" remove="true"/>
     <bind actionName="io-github-yas99en-moreemacsnb-core-actions-CapitalizeWordAction" key="M-U"/>
+    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-CapitalizeWordAction" key="A-U"/>
 
     <bind key="O-L" remove="true"/>
     <bind actionName="io-github-yas99en-moreemacsnb-core-actions-DowncaseWordAction" key="M-L"/>
+    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-DowncaseWordAction" key="A-L"/>
     <bind actionName="adjust-window-center" key="C-L"/>
 
     <bind key="O-C" remove="true"/>
     <bind actionName="io-github-yas99en-moreemacsnb-core-actions-CapitalizeWordAction" key="M-C"/>
+    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-CapitalizeWordAction" key="A-C"/>
 
     <bind key="O-T" remove="true"/>
     <bind actionName="io-github-yas99en-moreemacsnb-core-actions-TransposeWordsAction" key="M-T"/>
+    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-TransposeWordsAction" key="A-T"/>
     <bind actionName="io-github-yas99en-moreemacsnb-core-actions-TransposeCharsAction" key="C-T"/>
 
     <bind key="CO-SLASH" remove="true"/>
     <bind actionName="all-completion-show" key="CM-SLASH"/>
+    <bind actionName="all-completion-show" key="CA-SLASH"/>
 
     <bind key="OS-COMMA" remove="true"/>
     <bind actionName="caret-begin" key="MS-COMMA"/>
+    <bind actionName="caret-begin" key="AS-COMMA"/>
+
     <bind key="OS-PERIOD" remove="true"/>
     <bind actionName="caret-end" key="MS-PERIOD"/>
+    <bind actionName="caret-end" key="AS-PERIOD"/>
 
     <bind key="OS-F" remove="true"/>
     <bind actionName="fix-imports" key="MS-F"/>
+    <bind actionName="fix-imports" key="AS-F"/>
+
     <bind key="CO-BACK_SLASH" remove="true"/>
     <bind actionName="format" key="CM-BACK_SLASH"/>
+    <bind actionName="format" key="CA-BACK_SLASH"/>
 
     <bind key="O-0$C-K" remove="true"/>
     <bind actionName="cut-to-line-begin" key="M-0$C-K"/>
+    <bind actionName="cut-to-line-begin" key="A-0$C-K"/>
 
     <bind key="O-G$G" remove="true"/>
     <bind actionName="goto" key="M-G$G"/>
+    <bind actionName="goto" key="A-G$G"/>
+
     <bind key="O-G$O-G" remove="true"/>
     <bind actionName="goto" key="M-G$M-G"/>
+    <bind actionName="goto" key="A-G$A-G"/>
+
     <bind key="O-PERIOD" remove="true"/>
     <bind actionName="goto-declaration" key="M-PERIOD"/>
+    <bind actionName="goto-declaration" key="A-PERIOD"/>
+
     <bind key="CO-G" remove="true"/>
     <bind actionName="goto-declaration" key="CM-G"/>
+    <bind actionName="goto-declaration" key="CA-G"/>
 
     <bind key="OS-5" remove="true"/>
     <bind actionName="replace" key="MS-5"/>
+    <bind actionName="replace" key="AS-5"/>
 
     <bind key="CO-W" remove="true"/>
     <bind actionName="select-word" key="CM-W"/>
+    <bind actionName="select-word" key="CA-W"/>
 
     <bind key="O-0$C-X$TAB" remove="true"/>
     <bind actionName="shift-line-left" key="M-0$C-X$TAB"/>
+    <bind actionName="shift-line-left" key="A-0$C-X$TAB"/>
 
     <bind key="O-0$C-C$C-C" remove="true"/>
     <bind actionName="uncomment" key="M-0$C-C$C-C"/>
+    <bind actionName="uncomment" key="A-0$C-C$C-C"/>
 
-    <!-- Things we add only on the mac -->
     <bind key="M-UP" actionName="page-up"/> <!-- macbook support -->
+    <bind key="A-UP" actionName="page-up"/> <!-- macbook support -->
+
     <bind key="M-DOWN" actionName="page-down"/> <!-- macbook support -->
+    <bind key="A-DOWN" actionName="page-down"/> <!-- macbook support -->
     
 </bindings>

@@ -18,8 +18,7 @@
 
 ## Key Bindings
 
-* The following list is key bindings of more emacs.
-  * It is the difference from emacs bindings of NetBeans.
+* The following lists are major key bindings of more emacs.
 * 'rebind' means the rebind of NetBeans implementation.
 * 'nb emacs' means the binding of NetBeans Emacs bidings.
 
@@ -27,6 +26,8 @@
 
 * [The complete editor bindings definition of MoreEmacs.](https://github.com/yas99en/moreemacsnb/blob/master/core/src/io/github/yas99en/moreemacsnb/core/actions/MoreEmacs-keybindings.xml)
     * [modifier symbols](http://bits.netbeans.org/8.0/javadoc/org-openide-util/org/openide/util/Utilities.html#stringToKey(java.lang.String))
+* For mac user, both option key and command key are assigned to meta.
+    * [How to disable typing special characters when pressing option key in Mac OS X?](http://stackoverflow.com/questions/11876485/how-to-disable-typing-special-characters-when-pressing-option-key-in-mac-os-x)
 
 |function|	binding|	description|
 |:-----------|:------------|:------------|
@@ -90,8 +91,12 @@
 
 |function|	binding|	description|
 |:-----------|:------------|:------------|
+|C-x C-s|SaveAction|nb emacs|
+|C-x C-f|OpenFileAction|nb emacs|
+|C-x 1|MaximizeWindowAction|nb emacs|
+|C-x k|CloseWindowAction|nb emacs|
 |C-x 0|CloseWindowAction|rebind|
-|C-x C-c|CloseAllDocumentsAction|rebind. Sorry this is my preference.|
+|C-x C-c|CloseAllDocumentsAction|rebind. This is my preference.|
 
 ## Unicode
 
