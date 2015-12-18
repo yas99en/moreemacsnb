@@ -7,7 +7,7 @@ The following files are distributed under CDDL.
 - io/github/yas99en/moreemacsnb/core/layer.xml
 - io/github/yas99en/moreemacsnb/core/actions/MoreEmacs-keybindings.xml
 - io/github/yas99en/moreemacsnb/core/actions/MoreEmacs-keybindings-mac.xml
-See each files.
+See each files and http://www.netbeans.org/cddl-gplv2.html
 
 The copyright of the following file belongs to Unicode, Inc.
 - io/github/yas99en/moreemacsnb/core/utils/EastAsianWidth.txt
