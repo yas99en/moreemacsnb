@@ -115,4 +115,4 @@
 ## Links
 
 * [NetBeans Plugin Portal](http://plugins.netbeans.org/)
-
+* [MoreEmacs on NetBeans Plugin Portal](http://plugins.netbeans.org/plugin/62006/moreemacs)
