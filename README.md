@@ -106,6 +106,8 @@
 
 ## Change Log
 
+* 2015/12/18
+  * v1.0.0 release
 * 2015/12/15
   * changed C-r to find
   * added M-S-r as in-place-refactoring
