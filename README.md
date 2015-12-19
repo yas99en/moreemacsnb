@@ -116,3 +116,4 @@
 
 * [NetBeans Plugin Portal](http://plugins.netbeans.org/)
 * [MoreEmacs on NetBeans Plugin Portal](http://plugins.netbeans.org/plugin/62006/moreemacs)
+* [NetBeans Bug 99443 - support emacs set-mark-command (C-Space, C-@)](https://netbeans.org/bugzilla/show_bug.cgi?id=99443)
