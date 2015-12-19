@@ -8,11 +8,12 @@
 ## Install
 
 * JDK 1.8 or higher required.
-* download the nbm file from [NetBeans Plugin Portal](http://plugins.netbeans.org/plugin/62006/moreemacs)
-* open Tools/Plugin dialog
-* open Downloaded tab, select the nbm file, and install it.
-* open Tools/Options dialog, and open Keymap tab.
-* select "MoreEmacs".
+* Download the nbm file from [NetBeans Plugin Portal](http://plugins.netbeans.org/plugin/62006/moreemacs).
+* Open Tools/Plugins dialog.
+* Open Downloaded tab, press "Add Plugin...", select the nbm file.
+* Press "Install".
+* Open Tools/Options dialog, and open Keymap tab.
+* Select "MoreEmacs".
 
 <img src="moreemacsnb.png" width="300">
 
