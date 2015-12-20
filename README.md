@@ -8,6 +8,9 @@
 ## Install
 
 * JDK 1.8 or higher required.
+* **only for mac user**, edit NetBeans configuration file as follows:
+    * open `/Applications/NetBeans/NetBeans `***NBVERSION***`.app/Contents/Resources/NetBeans/etc/netbeans.conf`
+    * add `-J-Dnetbeans.editor.keymap.compatible=true` at end of value of `netbeans_default_options` parameter. (see following diff result)
 * Download the nbm file from [NetBeans Plugin Portal](http://plugins.netbeans.org/plugin/62006/moreemacs).
 * Open Tools/Plugins dialog.
 * Open Downloaded tab, press "Add Plugin...", select the nbm file.
@@ -16,6 +19,15 @@
 * Select "MoreEmacs".
 
 <img src="moreemacsnb.png" width="300">
+
+    ### only for mac user ###
+    
+    > diff -U0 "/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/etc/netbeans.conf"{.orig,}
+    --- /Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/etc/netbeans.conf.orig	2015-12-19 10:21:02.000000000 +0900
+    +++ /Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/etc/netbeans.conf	2015-12-20 16:58:06.000000000 +0900
+    @@ -46 +46 @@
+    -netbeans_default_options="-J-client -J-Xss2m -J-Xms32m -J-Dapple.laf.useScreenMenuBar=true -J-Dapple.awt.graphics.UseQuartz=true -J-Dsun.java2d.noddraw=true -J-Dsun.java2d.dpiaware=true -J-Dsun.zip.disableMemoryMapping=true"
+    +netbeans_default_options="-J-client -J-Xss2m -J-Xms32m -J-Dapple.laf.useScreenMenuBar=true -J-Dapple.awt.graphics.UseQuartz=true -J-Dsun.java2d.noddraw=true -J-Dsun.java2d.dpiaware=true -J-Dsun.zip.disableMemoryMapping=true -J-Dnetbeans.editor.keymap.compatible=true"
 
 ## Key Bindings
 
@@ -28,8 +40,6 @@
 * [The complete editor bindings definition of MoreEmacs.](https://github.com/yas99en/moreemacsnb/blob/master/core/src/io/github/yas99en/moreemacsnb/core/actions/MoreEmacs-keybindings.xml)
     * [modifier symbols](http://bits.netbeans.org/8.0/javadoc/org-openide-util/org/openide/util/Utilities.html#stringToKey(java.lang.String))
 * For mac user, both option key and command key are assigned to meta key.
-    * ~~[How to disable typing special characters when pressing option key in Mac OS X?](http://stackoverflow.com/questions/11876485/how-to-disable-typing-special-characters-when-pressing-option-key-in-mac-os-x)~~  
-    (Note: above workaround does not work on Yosemite and El Capitan...)
 
 |function|	binding|	description|
 |:-----------|:------------|:------------|
