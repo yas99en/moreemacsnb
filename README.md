@@ -8,9 +8,9 @@
 ## Install
 
 * JDK 1.8 or higher required.
-* **only for mac user**, edit NetBeans configuration file as follows:
-    * open `/Applications/NetBeans/NetBeans `***NBVERSION***`.app/Contents/Resources/NetBeans/etc/netbeans.conf`
-    * add `-J-Dnetbeans.editor.keymap.compatible=true` at end of value of `netbeans_default_options` parameter. (see following diff result)
+* **Only for mac user**, edit NetBeans configuration file as follows:
+    * Open `/Applications/NetBeans/NetBeans `***NBVERSION***`.app/Contents/Resources/NetBeans/etc/netbeans.conf` by text editor.
+    * Add `-J-Dnetbeans.editor.keymap.compatible=true` at end of value of `netbeans_default_options` parameter. (see following diff result)
 * Download the nbm file from [NetBeans Plugin Portal](http://plugins.netbeans.org/plugin/62006/moreemacs).
 * Open Tools/Plugins dialog.
 * Open Downloaded tab, press "Add Plugin...", select the nbm file.
