@@ -8,9 +8,7 @@
 ## Install
 
 * JDK 1.8 or higher required.
-* **Only for mac user**, edit NetBeans configuration file as follows:
-    * Open `/Applications/NetBeans/NetBeans `***NBVERSION***`.app/Contents/Resources/NetBeans/etc/netbeans.conf` by text editor.
-    * Add `-J-Dnetbeans.editor.keymap.compatible=true` at end of value of `netbeans_default_options` parameter. (see following diff result)
+    * Only for mac user: see [**the settings for meta key**](#meta-key-on-mac).
 * Download the nbm file from [NetBeans Plugin Portal](http://plugins.netbeans.org/plugin/62006/moreemacs).
 * Open Tools/Plugins dialog.
 * Open Downloaded tab, press "Add Plugin...", select the nbm file.
@@ -19,15 +17,6 @@
 * Select "MoreEmacs".
 
 <img src="moreemacsnb.png" width="300">
-
-    ### only for mac user ###
-    
-    > diff -U0 "/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/etc/netbeans.conf"{.orig,}
-    --- /Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/etc/netbeans.conf.orig	2015-12-19 10:21:02.000000000 +0900
-    +++ /Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/etc/netbeans.conf	2015-12-20 16:58:06.000000000 +0900
-    @@ -46 +46 @@
-    -netbeans_default_options="-J-client -J-Xss2m -J-Xms32m -J-Dapple.laf.useScreenMenuBar=true -J-Dapple.awt.graphics.UseQuartz=true -J-Dsun.java2d.noddraw=true -J-Dsun.java2d.dpiaware=true -J-Dsun.zip.disableMemoryMapping=true"
-    +netbeans_default_options="-J-client -J-Xss2m -J-Xms32m -J-Dapple.laf.useScreenMenuBar=true -J-Dapple.awt.graphics.UseQuartz=true -J-Dsun.java2d.noddraw=true -J-Dsun.java2d.dpiaware=true -J-Dsun.zip.disableMemoryMapping=true -J-Dnetbeans.editor.keymap.compatible=true"
 
 ## Key Bindings
 
@@ -114,6 +103,23 @@
 
 * The supplementary characters are supported. All characters are treated as code point.
 * East Asian Width is supported. In the column calculation of rectangle operation, the width of ambiguous characters are 2 for CJK languages and 1 for other languages.
+
+## Meta Key on Mac
+
+* MoreEmacs assigns both commnad key and option key to meta key in the editor bindings.
+* To use option key as meta key, the following settings are required.
+* Edit NetBeans configuration file as follows:
+    * Open `/Applications/NetBeans/NetBeans `***NBVERSION***`.app/Contents/Resources/NetBeans/etc/netbeans.conf` by text editor.
+    * Add `-J-Dnetbeans.editor.keymap.compatible=true` at end of value of `netbeans_default_options` parameter. (see following diff result)
+
+```    
+> diff -U0 "/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/etc/netbeans.conf"{.orig,}
+--- /Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/etc/netbeans.conf.orig	2015-12-19 10:21:02.000000000 +0900
++++ /Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/etc/netbeans.conf	2015-12-20 16:58:06.000000000 +0900
+@@ -46 +46 @@
+-netbeans_default_options="-J-client -J-Xss2m -J-Xms32m -J-Dapple.laf.useScreenMenuBar=true -J-Dapple.awt.graphics.UseQuartz=true -J-Dsun.java2d.noddraw=true -J-Dsun.java2d.dpiaware=true -J-Dsun.zip.disableMemoryMapping=true"
++netbeans_default_options="-J-client -J-Xss2m -J-Xms32m -J-Dapple.laf.useScreenMenuBar=true -J-Dapple.awt.graphics.UseQuartz=true -J-Dsun.java2d.noddraw=true -J-Dsun.java2d.dpiaware=true -J-Dsun.zip.disableMemoryMapping=true -J-Dnetbeans.editor.keymap.compatible=true"
+```
 
 
 ## Change Log
