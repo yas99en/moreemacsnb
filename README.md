@@ -9,11 +9,22 @@
 
 * JDK 1.8 or higher required.
     * Only for mac user: see [**the settings for meta key**](#meta-key-on-mac).
+* For NetBeans 8.1, it can be installed from the plugin manager of IDE.
+    * Open "Tools/Plugins" dialog.
+    * Open "Available Plugins" tab.
+    * Select "MoreEmacs", then press "Install" button.
+* After the installation, the following settings are required.
+    * Open "Tools/Options" dialog, and open Keymap tab.
+    * Select "MoreEmacs".
+
+### Manual Install
+
+Of cause, you can install manually.
 * Download the nbm file from [NetBeans Plugin Portal](http://plugins.netbeans.org/plugin/62006/moreemacs).
 * Open Tools/Plugins dialog.
 * Open Downloaded tab, press "Add Plugin...", select the nbm file.
 * Press "Install".
-* Open Tools/Options dialog, and open Keymap tab.
+* Open "Tools/Options" dialog, and open Keymap tab.
 * Select "MoreEmacs".
 
 <img src="moreemacsnb.png" width="300">
