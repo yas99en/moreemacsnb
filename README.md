@@ -111,6 +111,7 @@
 * Edit NetBeans configuration file as follows:
     * Open `/Applications/NetBeans/NetBeans `***NBVERSION***`.app/Contents/Resources/NetBeans/etc/netbeans.conf` by text editor.
     * Add `-J-Dnetbeans.editor.keymap.compatible=true` at end of value of `netbeans_default_options` parameter. (see following diff result)
+    * Restart NetBeans.
 
 ```    
 > diff -U0 "/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/etc/netbeans.conf"{.orig,}
