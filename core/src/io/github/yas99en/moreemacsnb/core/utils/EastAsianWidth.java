@@ -80,15 +80,15 @@ public class EastAsianWidth {
     }
 
     private static void parseStream(Stream<String> stream, byte[] db) {
-        stream.map(record -> {
-            int commentStart = record.indexOf("#");
-            return (commentStart == -1) ? record : record.substring(0, commentStart);
-        })
+        stream.map(EastAsianWidth::removeComment)
         .map(String::trim)
         .filter(content->!content.isEmpty())
-        .forEach(content -> {
-            parseContent(content, db);
-        });
+        .forEach(content ->parseContent(content, db));
+    }
+
+    private static String removeComment(String str) {
+        int commentStart = str.indexOf("#");
+        return (commentStart == -1) ? str : str.substring(0, commentStart);
     }
 
     private static void parseContent(String content, byte[] db) {
@@ -107,7 +107,7 @@ public class EastAsianWidth {
 
         int start = Integer.parseInt(rangeStr.substring(0, delimPos), 16);
         int end   = Integer.parseInt(rangeStr.substring(delimPos+2),  16);
-        IntStream.rangeClosed(start, end).forEach(cp -> {db[cp] = property;});
+        IntStream.rangeClosed(start, end).forEach(cp -> db[cp] = property);
     }
 
     private static byte property2Byte(String property) {
