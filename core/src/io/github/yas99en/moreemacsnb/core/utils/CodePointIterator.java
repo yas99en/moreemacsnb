@@ -29,6 +29,7 @@
 package io.github.yas99en.moreemacsnb.core.utils;
 
 import java.util.Iterator;
+import java.util.Objects;
 
 public final class CodePointIterator implements Iterator<Integer> {
     private final CharSequence seq;
@@ -39,10 +40,7 @@ public final class CodePointIterator implements Iterator<Integer> {
     }
     
     public CodePointIterator(CharSequence seq, int index) {
-        if(seq == null) {
-            throw new NullPointerException("seq is null");
-        }
-
+        Objects.requireNonNull(seq, "seq is null");
         this.seq = seq;
         setIndex(index);
     }

@@ -28,6 +28,7 @@
  */
 package io.github.yas99en.moreemacsnb.core.utils;
 
+import java.util.Objects;
 import javax.swing.text.BadLocationException;
 import javax.swing.text.Document;
 
@@ -41,9 +42,7 @@ public final class DocumentCharSequence implements CharSequence {
     }
     
     public DocumentCharSequence(Document doc, int offset, int length) {
-        if(doc == null) {
-            throw new NullPointerException("doc is null");
-        }
+        Objects.requireNonNull(doc, "doc is null");
 
         this.doc = doc;
         this.offset = offset;

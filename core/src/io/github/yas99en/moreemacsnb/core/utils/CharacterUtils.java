@@ -31,6 +31,7 @@ package io.github.yas99en.moreemacsnb.core.utils;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
+import java.util.Objects;
 
 public final class CharacterUtils {
     private CharacterUtils() {}
@@ -43,9 +44,8 @@ public final class CharacterUtils {
     }
 
     public static int getWidth(int codePoint, Locale locale) {
-        if(locale == null) {
-            throw new NullPointerException("locale is null");
-        }
+        Objects.requireNonNull(locale, "locale is null");
+
         int value = EastAsianWidth.getProperty(codePoint);
         switch(value) {
         case EastAsianWidth.NARROW:
