@@ -202,4 +202,26 @@ made subject to such option by the copyright holder.
     <bind actionName="io-github-yas99en-moreemacsnb-core-actions-IndentLineAction" key="TAB"/>
     <bind actionName="io-github-yas99en-moreemacsnb-core-actions-YankAction" key="C-Y"/>
     <bind actionName="io-github-yas99en-moreemacsnb-core-actions-YankAgainAction" key="O-Y"/>
+
+    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-InsertRectangleTextAction" key="C-X$R$T"/>
+
+    <bind actionName="add-caret-down" key="D-X$R$DOWN"/>
+    <bind actionName="add-caret-up" key="D-X$R$UP"/>
+    <bind actionName="completion-show" key="SO-SLASH"/>
+    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-KeyboardQuitAction" key="D-G$D-G"/>
+    <bind actionName="io-github-yas99en-moreemacsnb-core-actions-ToggleCommentRegionAction" key="D-SLASH"/>
+    <bind actionName="redo" key="SD-Z"/>
+    <bind actionName="redo" key="SO-MINUS"/>
+    <bind actionName="toggle-highlight-search" key="SD-S"/>
+    <bind actionName="toggle-rectangular-selection" key="D-X$SPACE"/>
+    <bind actionName="undo" key="SD-MINUS"/>
+    <bind actionName="word-match-next" key="O-SLASH"/>
+    <bind actionName="zoom-text-in" key="D-X$D-EQUALS"/>
+    <bind actionName="zoom-text-out" key="D-X$D-MINUS"/>
+    <bind actionName="quick-search" key="O-X"/>
+    <bind key="D-C$D-C" remove="true"/>
+    <bind key="D-G" remove="true"/>
+    <bind key="SO-W" remove="true"/>
+    <bind key="S-SPACE" remove="true"/>
+    <bind key="D-X$U" remove="true"/>
 </bindings>

@@ -28,19 +28,22 @@
  */
 package io.github.yas99en.moreemacsnb.core.actions;
 
-import io.github.yas99en.moreemacsnb.core.utils.KillRing;
 import java.awt.event.ActionEvent;
+import javax.swing.Action;
+import javax.swing.ActionMap;
+import javax.swing.SwingUtilities;
 import javax.swing.text.Caret;
 import javax.swing.text.Document;
+import javax.swing.text.Element;
 import javax.swing.text.JTextComponent;
 import org.netbeans.api.editor.EditorActionRegistration;
 
 
-@EditorActionRegistration(name="io-github-yas99en-moreemacsnb-core-actions-BackwardKillWordAction")
-public final class BackwardKillWordAction extends MoreEmacsAction {
+@EditorActionRegistration(name = "io-github-yas99en-moreemacsnb-core-actions-InsertRectangleTextAction")
+public final class InsertRectangleTextAction extends MoreEmacsAction {
 
-    public BackwardKillWordAction() {
-        super("backward-kill-word");
+    public InsertRectangleTextAction() {
+        super("insert-rectangle-text");
     }
 
     @Override
@@ -52,13 +55,23 @@ public final class BackwardKillWordAction extends MoreEmacsAction {
 
         Document doc = target.getDocument();
         Caret caret = target.getCaret();
-        int current = caret.getDot();
-        int prev = BackwardWordAction.getPreviousWordPosition(doc, current);
+        int mark = caret.getMark();
+        int dot = caret.getDot();
+        int start = (dot <= mark) ? dot : mark;
+        Element rootElem = doc.getDefaultRootElement();
+        int startRow = rootElem.getElementIndex(start);
+        int end = (dot > mark) ? dot : mark;
+        int endRow = rootElem.getElementIndex(end);
 
-        modifyAtomicAsUser(target, () -> {
-            caret.moveDot(prev);
-            KillRing.kill(target.getSelectedText());
-            target.cut();
+        ActionMap actionMap = target.getActionMap();
+        Action addCaretDownAction = actionMap.get("add-caret-down");
+        SetMarkAction.endMarking();
+
+        SwingUtilities.invokeLater(() -> {
+            target.setCaretPosition(start);
+            for (int i = startRow; i < endRow; i++) {
+                addCaretDownAction.actionPerformed(e);
+            }
         });
     }
 }
