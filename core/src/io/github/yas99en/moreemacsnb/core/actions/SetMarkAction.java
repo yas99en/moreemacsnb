@@ -131,6 +131,9 @@ public class SetMarkAction extends MoreEmacsAction {
 
         private void stopListening() {
             // second activation on this target, stop marking
+            if (activeOn == null) {
+                return;
+            }
             JTextComponent target = activeOn;
             target.removeCaretListener(this);
             target.getDocument().removeDocumentListener(myEditListener);
@@ -155,4 +158,7 @@ public class SetMarkAction extends MoreEmacsAction {
         LISTENER.listenTo(target);
     }
 
+    public static void endMarking() {
+        LISTENER.stopListening();
+    }
 }
