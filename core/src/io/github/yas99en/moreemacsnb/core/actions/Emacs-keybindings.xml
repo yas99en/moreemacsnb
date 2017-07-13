@@ -160,7 +160,6 @@ made subject to such option by the copyright holder.
     <bind actionName="try-catch" key="OS-W"/>
     <bind actionName="undo" key="UNDO"/>
     <bind actionName="undo" key="C-X$U"/>
-    <bind actionName="undo" key="C-SLASH"/>
     <bind actionName="uncomment" key="O-0$C-C$C-C"/>
     <bind actionName="word-match-next" key="O-SLASH"/>
 </bindings>
