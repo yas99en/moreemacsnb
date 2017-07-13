@@ -16,6 +16,7 @@ public class KillRing {
     private static final KillRing INSTANCE = new KillRing();
     private final Stack<String> killRing = new Stack<>();
     private int idx = 0;
+    private static final int MAX_KILL_RING_SIZE = 25;
 
     private KillRing() {
     }
@@ -38,6 +39,9 @@ public class KillRing {
 
     private void kill_(String str) {
         killRing.push(str);
+        if (killRing.size() > MAX_KILL_RING_SIZE) {
+            killRing.pop();
+        }
     }
 
     private String yank_() {
