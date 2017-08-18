@@ -40,12 +40,16 @@ Of cause, you can install manually.
 |:-----------|:------------|:------------|
 |C-space|MoreEmacs set-mark|mark current posision|
 |C-x C-x|MoreEmacs exchange-point-and-mark||
-|C-w|MoreEmacs kill-region|cut region to clipboard|
-|M-w|MoreEmacs kill-ring-save|copy region to clipboard|
-|C-y|paste-from-clipboard|nb emacs|
+|C-w|MoreEmacs kill-region|cut region to clipboard and kill ring|
+|M-w|MoreEmacs kill-ring-save|copy region to clipboard and kill ring|
+|C-y|MoreEmacs yank|paste from kill ring|
+|M-y|MoreEmacs yank-again|cycle through kill ring|
 |C-x u|undo|nb emacs|
-|C-/|undo|nb emacs|
+|C-S-MINUS|undo|nb emacs|
+|C-MINUS|redo||
+|C-/|comment-region|nb emacs|
 |M-/|completion-show|rebind|
+|S-M-/|all-completion-show|rebind|
 |C-M-/|all-completion-show|rebind|
 |C-f|caret-forward|nb emacs|
 |C-b|caret-backward|nb emacs|
@@ -80,6 +84,8 @@ Of cause, you can install manually.
 |C-o|split-line|rebind|
 |C-x r k|MoreEmacs kill-rectangle||
 |C-x r y|MoreEmacs yank-rectangle||
+|C-x r t|MoreEmacs insert-rectangle-string||
+|C-x SPACE|toggle-rectangular-selection||
 |C-s|find|nb emacs|
 |C-r|find|rebind|
 |M-s|find-next|nb emacs|

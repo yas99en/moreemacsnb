@@ -28,23 +28,22 @@
  */
 package io.github.yas99en.moreemacsnb.core.actions;
 
-import io.github.yas99en.moreemacsnb.core.utils.KillRing;
 import java.awt.event.ActionEvent;
 import javax.swing.Action;
 import javax.swing.ActionMap;
+import javax.swing.SwingUtilities;
 import javax.swing.text.Caret;
-import javax.swing.text.DefaultEditorKit;
+import javax.swing.text.Document;
+import javax.swing.text.Element;
 import javax.swing.text.JTextComponent;
-import org.netbeans.api.editor.*;
+import org.netbeans.api.editor.EditorActionRegistration;
 
-/**
- *
- * @author Yasuhiro Endoh
- */
-@EditorActionRegistration(name="io-github-yas99en-moreemacsnb-core-actions-KillRegionAction")
-public class KillRegionAction extends MoreEmacsAction {
-    public KillRegionAction() {
-        super("kill-region");
+
+@EditorActionRegistration(name = "io-github-yas99en-moreemacsnb-core-actions-InsertRectangleTextAction")
+public final class InsertRectangleTextAction extends MoreEmacsAction {
+
+    public InsertRectangleTextAction() {
+        super("insert-rectangle-text");
     }
 
     @Override
@@ -54,16 +53,25 @@ public class KillRegionAction extends MoreEmacsAction {
             return;
         }
 
+        Document doc = target.getDocument();
         Caret caret = target.getCaret();
-        ActionMap actionMap = target.getActionMap();
-        if(actionMap == null)  {
-            return;
-        }
-        Action cutAction = actionMap.get(DefaultEditorKit.cutAction);
+        int mark = caret.getMark();
+        int dot = caret.getDot();
+        int start = (dot <= mark) ? dot : mark;
+        Element rootElem = doc.getDefaultRootElement();
+        int startRow = rootElem.getElementIndex(start);
+        int end = (dot > mark) ? dot : mark;
+        int endRow = rootElem.getElementIndex(end);
 
-        KillRing.kill(target.getSelectedText());
-        cutAction.actionPerformed(e);
+        ActionMap actionMap = target.getActionMap();
+        Action addCaretDownAction = actionMap.get("add-caret-down");
         SetMarkAction.endMarking();
+
+        SwingUtilities.invokeLater(() -> {
+            target.setCaretPosition(start);
+            for (int i = startRow; i < endRow; i++) {
+                addCaretDownAction.actionPerformed(e);
+            }
+        });
     }
 }
-

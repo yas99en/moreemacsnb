@@ -269,7 +269,7 @@ made subject to such option by the copyright holder.
                 <attr name="originalFile" stringvalue="Actions/Edit/org-openide-actions-UndoAction.instance"/>
             </file>
             <file name="C-X C-F.shadow">
-                <attr name="originalFile" stringvalue="Actions/System/org-netbeans-modules-openfile-OpenFileAction.instance"/>
+                <attr name="originalFile" stringvalue="Actions/System/org-netbeans-modules-openfile-FileSearchAction.instance"/>
             </file>
             <file name="C-X C-K.shadow">
                 <attr name="originalFile" stringvalue="Actions/Window/org-netbeans-core-windows-actions-CloseWindowAction.instance"/>
@@ -336,6 +336,60 @@ made subject to such option by the copyright holder.
             </file>
             <file name="D-O.shadow">
                 <attr name="originalFile" stringvalue="Actions/Edit/org-netbeans-modules-jumpto-type-GoToType.instance"/>
+            </file>
+            <file name="D-C D-A.shadow">
+              <attr name="originalFile" stringvalue="Actions/Debug/org-netbeans-modules-debugger-ui-actions-ConnectAction.instance"/>
+            </file>
+            <file name="D-C D-C.shadow">
+              <attr name="originalFile" stringvalue="Actions/Project/org-netbeans-modules-project-ui-RunSingle.instance"/>
+            </file>
+            <file name="D-C D-D.shadow">
+              <attr name="originalFile" stringvalue="Actions/Debug/org-netbeans-modules-debugger-ui-DebugFileAction.instance"/>
+            </file>
+            <file name="D-C D-F.shadow">
+              <attr name="originalFile" stringvalue="Actions/Debug/org-netbeans-modules-debugger-ui-actions-StepOutAction.instance"/>
+            </file>
+            <file name="D-C D-N.shadow">
+              <attr name="originalFile" stringvalue="Actions/Debug/org-netbeans-modules-debugger-ui-actions-StepOverAction.instance"/>
+            </file>
+            <file name="D-C D-R.shadow">
+              <attr name="originalFile" stringvalue="Actions/Debug/org-netbeans-modules-debugger-ui-actions-ContinueAction.instance"/>
+            </file>
+            <file name="D-C D-S.shadow">
+              <attr name="originalFile" stringvalue="Actions/Debug/org-netbeans-modules-debugger-ui-actions-StepIntoAction.instance"/>
+            </file>
+            <file name="D-PERIOD.shadow">
+              <attr name="originalFile" stringvalue="Actions/Window/org-netbeans-modules-navigator-ShowNavigatorAction.instance"/>
+            </file>
+            <file name="D-X D-D.shadow">
+              <attr name="originalFile" stringvalue="Actions/System/org-netbeans-modules-openfile-OpenFileAction.instance"/>
+            </file>
+            <file name="D-X D-E.shadow">
+              <attr name="originalFile" stringvalue="Actions/Debug/org-netbeans-modules-debugger-ui-actions-EvaluateAction.instance"/>
+            </file>
+            <file name="D-X D-T.shadow">
+              <attr name="originalFile" stringvalue="Actions/Edit/org-netbeans-modules-jumpto-type-GoToType.instance"/>
+            </file>
+            <file name="D-X R B.shadow">
+              <attr name="originalFile" stringvalue="Actions/Edit/bookmark-history-popup-next.instance"/>
+            </file>
+            <file name="D-X R L.shadow">
+              <attr name="originalFile" stringvalue="Actions/Edit/org-netbeans-modules-editor-bookmarks-ui-BookmarksViewOpenAction.instance"/>
+            </file>
+            <file name="D-X R M.shadow">
+              <attr name="originalFile" stringvalue="Actions/Edit/bookmark-toggle.instance"/>
+            </file>
+            <file name="D-X Z.shadow">
+              <attr name="originalFile" stringvalue="Actions/Git/org-netbeans-modules-git-ui-status-StatusAction.instance"/>
+            </file>
+            <file name="O-LEFT.shadow">
+              <attr name="originalFile" stringvalue="Actions/Window/org-netbeans-core-windows-actions-PreviousTabAction.instance"/>
+            </file>
+            <file name="O-RIGHT.shadow">
+              <attr name="originalFile" stringvalue="Actions/Window/org-netbeans-core-windows-actions-NextTabAction.instance"/>
+            </file>
+            <file name="O-X.shadow">
+              <attr name="originalFile" stringvalue="Actions/Edit/org-netbeans-modules-quicksearch-QuickSearchAction.instance"/>
             </file>
         </folder>
     </folder>

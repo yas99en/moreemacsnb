@@ -30,21 +30,18 @@ package io.github.yas99en.moreemacsnb.core.actions;
 
 import io.github.yas99en.moreemacsnb.core.utils.KillRing;
 import java.awt.event.ActionEvent;
-import javax.swing.Action;
-import javax.swing.ActionMap;
+import javax.swing.text.BadLocationException;
 import javax.swing.text.Caret;
-import javax.swing.text.DefaultEditorKit;
 import javax.swing.text.JTextComponent;
-import org.netbeans.api.editor.*;
+import org.netbeans.api.editor.EditorActionRegistration;
+import org.netbeans.editor.BaseDocument;
 
-/**
- *
- * @author Yasuhiro Endoh
- */
-@EditorActionRegistration(name="io-github-yas99en-moreemacsnb-core-actions-KillRegionAction")
-public class KillRegionAction extends MoreEmacsAction {
-    public KillRegionAction() {
-        super("kill-region");
+
+@EditorActionRegistration(name = "io-github-yas99en-moreemacsnb-core-actions-YankAgainAction")
+public final class YankAgainAction extends MoreEmacsAction {
+
+    public YankAgainAction() {
+        super("yank-again");
     }
 
     @Override
@@ -54,16 +51,22 @@ public class KillRegionAction extends MoreEmacsAction {
             return;
         }
 
+        BaseDocument doc = (BaseDocument)target.getDocument();
         Caret caret = target.getCaret();
-        ActionMap actionMap = target.getActionMap();
-        if(actionMap == null)  {
-            return;
-        }
-        Action cutAction = actionMap.get(DefaultEditorKit.cutAction);
+        int current = caret.getDot();
+        String lastYank = KillRing.lastYank();
+        int insertPoint = current - lastYank.length();
+        String yankAgain = KillRing.yankAgain();
+        int finalPoint = insertPoint + yankAgain.length();
 
-        KillRing.kill(target.getSelectedText());
-        cutAction.actionPerformed(e);
-        SetMarkAction.endMarking();
+        doc.runAtomicAsUser(() -> {
+            try {
+                doc.remove(insertPoint, current - insertPoint);
+                target.setCaretPosition(insertPoint);
+                doc.insertString(insertPoint, yankAgain, null);
+                target.setCaretPosition(finalPoint);
+            } catch (BadLocationException ex) {
+            }
+        });
     }
 }
-
